@@ -1,3 +1,10 @@
+$(".chevron").click(function(event) {
+  console.log(event.target.getAttribute('data-name'))
+  next = "slide-2"
+  $('html, body').animate({
+    scrollTop: $("#" + next).offset().top
+  }, 2000);
+});
 
 scrollInit = function() {
   $window = $(window);

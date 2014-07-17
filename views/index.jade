@@ -9,15 +9,18 @@ block content
             h1
               | Awesome Wi-Fi for Everyone
               br
-              | Analytics for you. Cool potatos.
+              | Analytics for you. Cool potatoes.
             p
               | Start doing it with Cucumber Tony today
+            .scroll
+              .chevron(data-plans=123)
+                i.fa.fa-chevron-down.fa-2x(data-next='slide-2')
 
     section#slide-2
       .bcg(data-0='background-color:rgb(236,87,36);', data--1600-top='background-color:(237,42,139);', data-anchor-target='#slide-2')
         .hsContainer
           .hsContent
-            h2(data-center='opacity: 1', data--200-bottom='opacity: 0', data-206-top='opacity: 1', data-106-top='opacity: 0', data-anchor-target='#slide-2 h2')
+            h2(data-center='opacity: 1', data--200-bottom='opacity: 0', data-206-top='opacity: 1', data-106-top='opacity: 1', data-56-top='opacity: 0', data-anchor-target='#slide-2 h2')
               | Ready to roll in under 60 seconds.
             p(data-center='opacity: 1', data--200-bottom='opacity: 0', data-206-top='opacity: 1', data-106-top='opacity: 0', data-anchor-target='#slide-2 h2')
               | Buy a Wi-Fi box or use a compatible device. Plug it in and off you go.
@@ -58,7 +61,11 @@ block content
                   br
                   a(href='#', class="btn btn-default") Sign-up
 
-    section#slide-4.homeSlide.homeSlide
+            .scroll
+              .chevron
+                i.fa.fa-chevron-down.fa-2x(data-next='')
+
+    section#slide-4.homeSlide
       div.bcg(data-center='background-position: 50% 0px;', data-bottom-top='background-position: 50% 100px; ', data-top-bottom='background-position: 50% -100px;', data-anchor-target='#slide-4')
         div.curtainContainer
           div.curtain(data-bottom-top='opacity: 0', data-106-top='height: 1%; opacity: 0; top: -10%;', data-center='height: 100%; opacity: 0.5; top: 0%;', data-anchor-target='#slide-4')
@@ -66,25 +73,32 @@ block content
             h2 Predict flows of traffic
             h4 Stick this in your pipe. Using the data from your Wi-Fis, you can predict movement, watch flows of people and measure the pulse of your city.
 
+    section#slide-5.homeSlideTall
+      div.bcg(data-2600='background-position: 50% 150px;', data-2300='background-position: 50% 150px; ', data-3400='background-position: 50% 150px;', data-anchor-target='#slide-5')
+        #easing_wrapper(data-0='display:none;', data-2800='display:block; top: 100px; opacity: 1', data-3400='opacity: 0;')
+          #easing
+            h1 Introducing Cucumber Tony. Hey Tony.
+            h4.black Tony is probably the most awesome dashboard in the world. You use it to manage, monitor and control all your Wi-Fi devices. Need to update some setting while you're chilling with your homies? No problem, Tony will get that done in seconds.
 
+        #easing_wrapper(data-0='display:none;', data-3400='opacity:0; display: block;', data-3600='top: 100px; opacity: 1.0', data-4200='opacity: 0;')
+          #easing
+            h1 Stick Something Awesome In There
+            h4.black Tony is probably the most awesome dashboard in the world. You use it to manage, monitor and control all your Wi-Fi devices. Need to update some setting while you're chilling with your homies? No problem, Tony will get that done in seconds.
 
+  section#slide-6.homeSlide.homeSlideTall2
+    .bcg(data-4200='background-color:rgb(51,0,51);', data-4400='background-color:(0,0,0);', data-anchor-target='#slide-6')
+      .hsContainer
+        .hsContent
+          #easing_wrapper
+            #easing(data-0='display:none;', data-4400='display:block; position: fixed; top: 200px; opacity: 1', data-5300='opacity: 0;')
+              h2 We built this city on rock and roll
+              p
+                | Not enough parallax goodness? Let me know in the comments or hit me up at
 
-    section#slide-5.homeSlide.homeSlideTall
-      div.bcg(data-center='background-position: 50% 0px;', data-bottom-top='background-position: 50% 100px; ', data-top-bottom='background-position: 50% -100px;', data-anchor-target='#slide-5')
-        div.hsContainer
-          div.hsContent
-            div.dashboard(data-500-top='opacity: 0', data--30p-top='opacity: 1;', data--40p-top='opacity: 0; top: 0px;', data-bottom='opacity: 0.8; position: fixed; top: 106px; width: 100%; left: 0;', data-anchor-target='#slide-5')
-              h1 Introducing Cucumber Tony. Hey Tony.
-              h4.black Tony is probably the most awesome dashboard in the world. You use it to manage, monitor and control all your Wi-Fi devices. Need to update some setting while you're chilling with your homies? No problem, Tony will get that done in seconds.
-            div(data-506-top='opacity: 0', data--30p-top='opacity: 1;', data--40p-top='opacity: 0; top: 0px;', data-bottom='opacity: 0.8; position: fixed; top: 306px; width: 100%; left: 200px;', data-anchor-target='#slide-5')
-              img(src="/images/palm-tree-beach.png", width="395px")
-
-      .bcg.bcg3(data-500-bottom='opacity: 0;', data-100-bottom='opacity: 1;', data-anchor-target='#slide-5')
-        .hsContainer
-          .hsContent(data-100-bottom='opacity: 0;', data-bottom='opacity: 1;', data-anchor-target='#slide-5')
-            h2 FIN
-            p
-              | Must write something interesting here
+            #easing(data-0='display:none;', data-5300='display: block; top: 200px; opacity: 1')
+              h2 Meet the Team
+              p
+                | Not enough parallax goodness? Let me know in the comments or hit me up at
 
 
 

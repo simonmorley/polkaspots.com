@@ -79,3 +79,27 @@ block content
 
 block title
   | Home Page
+
+
+    section#slide-5.homeSlide.homeSlideTall
+      div.bcg(data-center='background-position: 50% 200px;', data-bottom-top='background-position: 50% 200px; ', data-top-bottom='background-position: 50% -100px;', data-anchor-target='#slide-5')
+        div.hsContainer
+          div.hsContent
+
+            div.dashboard(data-500-top='opacity: 0', data-100-top='opacity: 0;', data--40p-top='opacity: 0; top: 0px;', data-bottom='opacity: 1; position: fixed; top: 0px; width: 100%; left: 0;', data-anchor-target='#slide-5')
+              h1 Introducing Cucumber Tony. Hey Tony.
+              h4.black Tony is probably the most awesome dashboard in the world. You use it to manage, monitor and control all your Wi-Fi devices. Need to update some setting while you're chilling with your homies? No problem, Tony will get that done in seconds.
+
+            div.dashboard(data-900-top='opacity: 0', data-100-top='opacity: 1;', data--40p-top='opacity: 0; top: 0px;', data-bottom='opacity: 0; position: fixed; top: 0px; width: 100%; left: 0;', data-anchor-target='#slide-5')
+              h1 Him lasdkjf SImon
+
+            div(data-506-top='opacity: 0', data--30p-top='opacity: 1;', data--40p-top='opacity: 0; bottom: 0px;', data-bottom='opacity: 0; position: fixed; bottom: -20px; right: -300px; width: 100%; ', data-anchor-target='#slide-5')
+              img(src="/images/palm-tree-beach.png", width="395px")
+
+      .bcg.bcg3(data-500-bottom='opacity: 0;', data-100-bottom='opacity: 1;', data-anchor-target='#slide-5')
+        .hsContainer
+          .hsContent(data-100-bottom='opacity: 0;', data-bottom='opacity: 1;', data-anchor-target='#slide-5')
+            h2 We built this city on rock and roll
+            p
+              | Must write something interesting here
+

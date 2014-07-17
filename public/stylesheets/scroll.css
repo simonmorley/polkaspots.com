@@ -8,6 +8,31 @@ section {
   height: 100%;
 }
 
+#easing {
+  position: fixed;
+  top: 50px;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.chevron {
+  position: fixed;
+  bottom: 50px;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.skrollable {
+  /* position: fixed; */
+  /* z-index: 100; */
+}
+
 .loaded section,
 .no-js section {
   opacity: 1;
@@ -43,20 +68,15 @@ main {
 Slide 5
 #slide-5 {position: relative;}
 
-#slide-5 .bcg {
-  background-image:url('../images/dashboard.png');
-  /* background-size: 700px 345px; */
+#slide-6 .bcg {
+  /* background-image:url("../images/library-original.png") */
+  background-color: black;
 }
 
-/* #slide-5 .bcg {background-image:url('../img/Iphone-with-screen-shot.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 1} */
-#slide-5 .bcg3 {background: none; background-color: #010101; z-index: 2;  position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2}
-
-.dashboard {
-  padding: 80px;
-  max-width: 1000px;
-  width: 98%;
-  margin: 0 auto;
-  text-align: center;
+#slide-5 .bcg {
+  background-image:url('../images/dashboard.png');
+  background-size: contain;
+  /* z-index: 4; */
 }
 
 .hsContainer {
