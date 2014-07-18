@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    title
+      block title
+      | &nbsp;| PolkaSpots Wi-Fi
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/polkaspots.css')
+    link(rel='stylesheet', href='/stylesheets/scroll.css')
+    link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
+  body.loading
+    header#header.navbar.navbar-inverse.navbar-fixed-top.bs-docs-nav(role='banner')
+      .container
+        .navbar-header
+          button.navbar-toggle(data-target='.bs-navbar-collapse', data-toggle='collapse', type='button')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/')
+            img(height='28px', src='/images/logos/polkaspots.svg')
+
+        nav.collapse.navbar-collapse.bs-navbar-collapse(role='navigation')
+          ul.nav.navbar-nav
+            li
+              a(href='/wifi-analytics') ANALYTICS
+            li
+              a(href='/features') FEATURES
+            li
+              a(data-no-turbolink='true', href='/reports') HOW IT WORKS
+            li
+              a#plans_link.text-success(href='/plans') PLANS
+
+    <!-- block header -->
+    .container
+    block content
+
+      footers
+
+    script(type='text/javascript', src='/javascripts/jquery.js')
+    script(type='text/javascript', src='/javascripts/skrollr.js')
+    script(type='text/javascript', src='/javascripts/imagesloaded.js')
+    script(type='text/javascript', src='/javascripts/polkaspots.js')
