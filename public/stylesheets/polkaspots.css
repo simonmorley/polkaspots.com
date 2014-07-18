@@ -293,6 +293,22 @@ section {
   padding: 40px;
 }
 
+/* How It Works */
+
+.how-wifi-works {
+  height: 665px;
+  background-color: transparent;
+}
+
+.how-wifi-works .hero {
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: 1140px auto;
+  background-image:url('../images/how-wifi-works/create-wifi-hotspot.png');
+  background-position: 50% 0px;
+}
+
+
 .hero .content {
 }
 

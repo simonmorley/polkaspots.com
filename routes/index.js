@@ -16,4 +16,9 @@ router.get('/wifi-analytics', function(req, res) {
   res.render('analytics', { title: 'Analytics' });
 });
 
+/* GET how it works page. */
+router.get('/how-it-works', function(req, res) {
+  res.render('how', { title: 'Analytics' });
+});
+
 module.exports = router;
