@@ -147,3 +147,8 @@ Slide 5
   padding: 40px;
   /* background-image:url("../images/trans-000-60.png"); */
 }
+
+section {
+  margin-bottom: 0px;
+}
+
