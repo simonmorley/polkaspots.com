@@ -171,11 +171,11 @@ ul.pricing-table {
 /* Set the fixed height of the footer here */
 /* #push, */
 #footer {
-  /* height: 10px; */
-  /* background-color: #FAFAFA; */
+  height: 100px;
+  background-color: #000;
   /* margin-top: -60px; /1* negative value of footer height *1/ */
-  /* padding: 20px 0 0 0; */
-  /* clear: both; */
+  padding: 20px 0 0 0;
+  clear: both;
 }
 /* #header-image { */
 /*   background: url('/images/library-original.jpg') no-repeat; */
@@ -234,8 +234,7 @@ p.hero-text {
 
 /* */
 .main {
-  margin-top: 50px;
-
+  margin-top: -40px;
 }
 
 section {
@@ -258,8 +257,24 @@ section {
   background-position: 50% -80px;
 }
 
+/* Analytics */
+
+.analytics {
+  height: 620px;
+  background-color: transparent;
+}
+
+.analytics .hero {
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: 100%;
+  background-image:url('../images/wifi-analytics/derby-flows.jpg');
+  background-position: 50% -180px;
+}
+
+
 .hero h1 {
-  margin-top: 0px;
+  margin-top: 120px;
   font-size: 46px;
   color: #2e3b4e;
   text-transform: uppercase;
@@ -293,6 +308,27 @@ section {
     margin-left: -600px;   /* 50% */
   }
 }
+
+.white-banner {
+  background-image:url('../images/trans-60.png');
+}
+
+.black-banner {
+  background-image:url('../images/trans-000-40.png');
+  padding: 40px 40px 100px 40px;
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.black-banner h1 {
+  color: white;
+}
+
+.black-banner h2 {
+  color: white;
+}
+
 
 /* @media */
 /*     only screen and (-webkit-min-device-pixel-ratio: 2), */
