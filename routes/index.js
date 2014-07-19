@@ -11,6 +11,26 @@ router.get('/features', function(req, res) {
   res.render('features', { title: 'Features' });
 });
 
+/* GET more feautres configure page. */
+router.get('/configure', function(req, res) {
+  res.render('configure', { title: 'Features' });
+});
+
+/* GET more feautres create page. */
+router.get('/create', function(req, res) {
+  res.render('create', { title: 'Features' });
+});
+
+/* GET more feautres design page. */
+router.get('/design', function(req, res) {
+  res.render('design', { title: 'Features' });
+});
+
+/* GET more feautres monitor page. */
+router.get('/monitor', function(req, res) {
+  res.render('monitor', { title: 'Features' });
+});
+
 /* GET analytics page. */
 router.get('/wifi-analytics', function(req, res) {
   res.render('analytics', { title: 'Analytics' });
@@ -31,12 +51,14 @@ router.get('/opensource-wifi-firmware', function(req, res) {
   res.render('firmware', { title: 'Analytics' });
 });
 
+
+/* 301 301 301 301 301 301 */
+
 /* GET discontinued smart wifi feature pages */
 router.get('/smart-wifi', function(req, res) {
   res.render('smart-wifi', { title: 'Analytics' });
 });
 
-/* 301s */
 router.get('/smart-wifi*', function(req, res) {
   res.redirect(301, "/smart-wifi");
   res.end();
@@ -306,7 +328,8 @@ router.get('/wifi-hotspot-software-instructions', function(req, res) {
   res.end();
 });
 
-
-
+router.get('*', function(req, res){
+  res.render('404', { title: 'Express' });
+});
 
 module.exports = router;

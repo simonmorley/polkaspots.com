@@ -278,6 +278,13 @@ section {
   background-position: 50% 11px;
 }
 
+/* MORE FEATURES */
+
+.more-features {
+  height: 500px;
+  background-color: transparent;
+}
+
 /* Analytics */
 
 .analytics {
