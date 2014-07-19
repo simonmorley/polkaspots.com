@@ -1,0 +1,57 @@
+extends layout
+
+block content
+  section.more-features
+    .hero
+      .content
+        h1 More Stuff to Play With
+        h2 Every plan includes our core-features; social logins, captive portal, rocket-powered cloud control and analytics. Peruse all the features below.
+        include more-features-header
+  hr
+  .container
+    section
+     .row
+      .col-xs-12
+        h1 Enterprise networking made easy
+        h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+        hr
+
+      .col-xs-6.text-left
+        h2 Public &amp; Private Networks
+        p You can create multiple networks for different activites. One for private use one for your applications like your tills and sound system and one for guest to access. So you'll always be seperate from your guests.
+
+      .col-xs-6
+         img(src="/images/wifi-features/more-wifi-features/public-private-networks.png", class='img img-responsive')
+
+    hr
+    section
+     .row
+      .col-xs-6
+         img(src="/images/wifi-features/more-wifi-features/wifi-content-filtering.png", class='img img-responsive')
+
+      .col-xs-6.text-left
+        h2 Content Filtering
+        p The Internet is full of some great, and some not so great stuff. Cucumber Tony lets you block the nasty bits that could get you into trouble. Choose a filtering level depending on your needs. Or integrate your exisitng filtering service.
+
+    hr
+    section
+     .row
+
+      .col-xs-6.text-left
+        h2 Captive Portal
+        p You'll never be culpable for something a visitor has downloaded because Cucumber Tony logs your download history via a captive portal.
+
+      .col-xs-6
+         img(src="/images/wifi-features/more-wifi-features/wifi-captive-portal.png", class='img img-responsive')
+
+    hr
+    section
+     .row
+      .col-xs-6
+        img(src="/images/wifi-features/more-wifi-features/block-wifi-users.png", class='img img-responsive')
+
+      .col-xs-6.text-left
+        h2 Block Repeat Offenders
+        p If you notice one user is overdoing it, you can block them from connecting altogether.
+
+    include more-features-footer

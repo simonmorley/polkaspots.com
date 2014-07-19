@@ -31,6 +31,11 @@ router.get('/monitor', function(req, res) {
   res.render('monitor', { title: 'Features' });
 });
 
+/* GET more feautres secure page. */
+router.get('/wifi-security', function(req, res) {
+  res.render('secure', { title: 'Features' });
+});
+
 /* GET analytics page. */
 router.get('/wifi-analytics', function(req, res) {
   res.render('analytics', { title: 'Analytics' });
