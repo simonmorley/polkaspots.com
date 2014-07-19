@@ -23,6 +23,10 @@ h3 {
   margin-bottom: 48px;
 }
 
+h4 {
+  font-weight: 500;
+}
+
 p {
   color: #5f6a7d;
   font-size: 14px;
@@ -36,6 +40,10 @@ p {
 
 hr {
   margin-top: 10px;
+}
+
+.grey-line {
+  border-top: 1px solid #5f6a7d;
 }
 
 .navbar-inverse {
@@ -171,8 +179,8 @@ ul.pricing-table {
 /* Set the fixed height of the footer here */
 /* #push, */
 #footer {
-  height: 100px;
-  background-color: #000;
+  height: 400px;
+  background-color: #330033;
   /* margin-top: -60px; /1* negative value of footer height *1/ */
   padding: 20px 0 0 0;
   clear: both;
@@ -242,6 +250,11 @@ section {
   margin-bottom: 40px;
 }
 
+.discontinued {
+  height: 500px;
+  margin-top:
+}
+
 /* FEATURES */
 
 .features {
@@ -268,7 +281,7 @@ section {
 /* Analytics */
 
 .analytics {
-  height: 400px;
+  height: 550px;
   background-color: transparent;
 }
 
