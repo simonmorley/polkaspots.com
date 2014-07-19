@@ -21,4 +21,9 @@ router.get('/how-it-works', function(req, res) {
   res.render('how', { title: 'Analytics' });
 });
 
+/* GET wifi plans page. */
+router.get('/wifi-plans', function(req, res) {
+  res.render('plans', { title: 'Analytics' });
+});
+
 module.exports = router;

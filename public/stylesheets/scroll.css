@@ -74,7 +74,7 @@ Slide 5
 }
 
 #slide-5 .bcg {
-  background-image:url('../images/dashboard.png');
+  background-image:url('../images/wifi-features/wifi-dashboard.png');
   background-size: contain;
   /* z-index: 4; */
 }

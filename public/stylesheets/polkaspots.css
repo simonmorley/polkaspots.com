@@ -249,18 +249,26 @@ section {
   background-color: transparent;
 }
 
+/* .features .hero { */
+/*   background-repeat: no-repeat; */
+/*   /1* background-attachment: fixed; *1/ */
+/*   /1* background-size: auto 100%; *1/ */
+/*   background-image:url('../images/wifi-features/wifi-analytics-graph.png'); */
+/*   background-position: 50% -80px; */
+/* } */
+
 .features .hero {
+  background-position: center center;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-  /* background-size: auto 100%; */
-  background-image:url('../images/wifi-features/wifi-analytics-graph.png');
-  background-position: 50% -80px;
+  background-size: 1200px auto;
+  background-image:url('../images/wifi-features/wifi-dashboard-cropped.png');
+  background-position: 50% 11px;
 }
 
 /* Analytics */
 
 .analytics {
-  height: 620px;
+  height: 400px;
   background-color: transparent;
 }
 
@@ -268,6 +276,7 @@ section {
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-size: 100%;
+
   background-image:url('../images/wifi-analytics/derby-flows.jpg');
   background-position: 50% -180px;
 }
@@ -296,7 +305,7 @@ section {
 /* How It Works */
 
 .how-wifi-works {
-  height: 665px;
+  height: 503px;
   background-color: transparent;
 }
 
@@ -350,6 +359,10 @@ section {
 
 .white-banner {
   background-image:url('../images/trans-60.png');
+  padding: 40px 40px 100px 40px;
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
 }
 
 .black-banner {
