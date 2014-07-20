@@ -1,4 +1,4 @@
-re.js v2.1.1 - Awesome Media Queries in JavaScript
+/* enquuuuire.js v2.1.1 - Awesome Media Queries in JavaScript
  * Copyright (c) 2014 Nick Williams - http://wicky.nillia.ms/enquire.js
    *  * License: MIT (http://www.opensource.org/licenses/mit-license.php)
                       *   */

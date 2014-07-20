@@ -109,7 +109,7 @@ router.get('/login', function(req, res) {
 });
 
 router.get('/signup', function(req, res) {
-  res.redirect(301, "https://mywifi.polkaspots.com/signup");
+  res.redirect(301, "https://mywifi.polkaspots.com/signup?ref=www");
   res.end();
 });
 

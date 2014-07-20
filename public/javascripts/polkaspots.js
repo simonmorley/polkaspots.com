@@ -6,38 +6,64 @@ $(".next").click(function(event) {
 });
 
 scrollInit = function() {
+  if ($("#home").length) {
+    $body = $('body');
+    $body.imagesLoaded( function() {
+      setTimeout(function() {
+        adjustWindow();
+        $body.removeClass('loading').addClass('loaded');
+      }, 800);
+    });
+  }
+}
+
+initAdjustWindow = function() {
+  return {
+    match : function() {
+      scrollInit();
+    },
+    unmatch : function() {
+      scrollInit();
+    }
+  };
+}
+
+adjustWindow = function() {
+
   $window = $(window);
   $slide = $('.homeSlide');
   $slideTall = $('.homeSlideTall');
   $slideTall2 = $('.homeSlideTall2');
-  $body = $('body');
-
-  $body.imagesLoaded( function() {
-    setTimeout(function() {
-      adjustWindow();
-      $body.removeClass('loading').addClass('loaded');
-    }, 800);
-  });
-}
-
-adjustWindow = function() {
-  var s = skrollr.init({
-    render: function(data) {}
-  });
 
   winH = $window.height();
+  winW = $window.width();
 
   if(winH <= 550) {
     winH = 550;
   }
 
-  // Resize our slides
-  $slide.height(winH);
-  $slideTall.height(winH*2);
-  $slideTall2.height(winH*3);
+  if( winW >= 1024) {
 
-  // Refresh Skrollr after resizing our sections
-  s.refresh($('.homeSlide'));
+    var s = skrollr.init({
+      forceHeight: false
+    });
+
+    $slide.height(winH);
+    $slideTall.height(winH*2);
+    $slideTall2.height(winH*3);
+    s.refresh($('.homeSlide'));
+
+  }
+
+  else {
+    var s = skrollr.init();
+    s.destroy();
+  }
+
+  if(Modernizr.touch) {
+    var s = skrollr.init();
+    s.destroy();
+  }
 
 }
 
@@ -74,6 +100,8 @@ contactMap = function() {
     });
   }
 };
+
+enquire.register("screen and (min-width : 768px)", initAdjustWindow(), false);
 
 $(document).ready(scrollInit);
 $(document).ready(contactMap);

@@ -1,7 +1,7 @@
 extends home_layout
 
 block content
-  main
+  main#home
     section#slide-1.homeSlide
       .bcg(data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px; ', data-anchor-target='#slide-1')
         .hsContainer
@@ -10,7 +10,7 @@ block content
               | Awesome Wi-Fi for Everyone
               br
               | Analytics for you. Cool potatoes.
-            p
+            h3
               | Start doing it with Cucumber Tony today
             .scroll
               .chevron.next(data-next="slide-2")
@@ -35,21 +35,21 @@ block content
                 .col-xs-12
                   h2 Hey ho, let's go
 
-                .col-xs-4
+                .col-xs-12.col-sm-12.col-md-12.col-lg-4
                   h4
                     | Step 1. Create Account
                   p
                     span.bgBlack
                       | Set up an account online and manage all your Wi-Fi locations around the world.
 
-                .col-xs-4
+                .col-xs-12.col-sm-12.col-md-12.col-lg-4
                   h4
                     | Step 2. Get a Box
                   p
                     span.bgBlack
                       | Sync your access points to your account. Lots of models are compatible - check the list here.
 
-                .col-xs-4
+                .col-xs-12.col-sm-12.col-md-12.col-lg-4
                   h4
                     | Step 3. Customise. Analyse.
                   p
@@ -61,17 +61,17 @@ block content
                   br
                   a(href='#', class="btn btn-default") Sign-up
 
-
     section#slide-4.homeSlide
       div.bcg(data-center='background-position: 50% 0px;', data-bottom-top='background-position: 50% 100px; ', data-top-bottom='background-position: 50% -100px;', data-anchor-target='#slide-4')
         div.curtainContainer
           div.curtain(data-bottom-top='opacity: 0', data-106-top='height: 1%; opacity: 0; top: -10%;', data-center='height: 100%; opacity: 0.5; top: 0%;', data-anchor-target='#slide-4')
           div.copy(data-bottom-top='opacity: 0', data--100-bottom='opacity: 0', data--280-bottom='opacity: 1;', data-280-top='opacity: 1;', data-106-top='opacity: 0;', data-anchor-target='#slide-4 .copy')
             h2 Predict flows of traffic
-            h4 Stick this in your pipe. Using the data from your Wi-Fis, you can predict movement, watch flows of people and measure the pulse of your city.
+            h3 Stick this in your pipe. Using the data from your Wi-Fis, you can predict movement, watch flows of people and measure the pulse of your city.
+
 
     section#slide-5.homeSlideTall
-      div.bcg(data-2600='background-position: 50% 180px;', data-2300='background-position: 50% 180px; ', data-3400='background-position: 50% 180px;', data-anchor-target='#slide-5')
+      div.bcg(data-2000='background-position: 50% 180px;', data-2300='background-position: 50% 180px; ', data-3400='background-position: 50% 180px;', data-anchor-target='#slide-5')
         #easing_wrapper(data-0='display:none;', data-2800='display:block; top: 100px; opacity: 1', data-3400='opacity: 0;')
           #easing
             h1 Introducing Cucumber Tony. Hey Tony.
@@ -79,7 +79,7 @@ block content
             br
 
 
-        #easing_wrapper(data-0='display:none;', data-3400='opacity:0; display: block;', data-3600='top: 200px; opacity: 1.0', data-4200='opacity: 0;')
+        #easing_wrapper.hidden-xs.hidden-sm(data-0='display:none;', data-3400='opacity:0; display: block;', data-3600='top: 200px; opacity: 1.0', data-4200='opacity: 0;')
           #easing
             h1 Stick Something Awesome In There
             h3 Tony is probably the most awesome dashboard in the world. You use it to manage, monitor and control all your Wi-Fi devices. Need to update some setting while you're chilling with your homies? No problem, Tony will get that done in seconds.
@@ -111,6 +111,17 @@ block content
             #easing(data-0='display:none;', data-5300='display: block; top: 200px; opacity: 1')
               h2 Meet the Family
               p From A-Z, here's some of the special people who've done it with Tony more than once.
+
+              br
+              br
+              br
+              br
+              br
+              br
+
+              h3 For more information about Cucumber Tony...
+              a(href="/features", class='btn btn-lg btn-default btn-light-txt') Read More.
+               
 
 
 

@@ -8,6 +8,7 @@ html
     link(rel='stylesheet', href='/stylesheets/polkaspots.css')
     link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
     script(type='text/javascript', src='/javascripts/jquery.js')
+    script(type='text/javascript', src='/javascripts/modernizr.js')
   body.loading
     include header-nav
     .main
@@ -18,6 +19,7 @@ html
         include footer
 
 
+    script(type='text/javascript', src='/javascripts/enquire.js')
     script(type='text/javascript', src='/javascripts/imagesloaded.js')
     script(type='text/javascript', src='/javascripts/polkaspots.js')
     include olark.html
