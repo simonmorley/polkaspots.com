@@ -7,93 +7,19 @@ html
     link(rel='stylesheet', href='/stylesheets/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/polkaspots.css')
     link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
+    script(type='text/javascript', src='/javascripts/jquery.js')
   body.loading
-    header#header.navbar.navbar-inverse.navbar-fixed-top.bs-docs-nav(role='banner')
-      .container
-        .navbar-header
-          button.navbar-toggle(data-target='.bs-navbar-collapse', data-toggle='collapse', type='button')
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand(href='/')
-            img(height='28px', src='/images/logos/polkaspots.svg')
-
-        nav.collapse.navbar-collapse.bs-navbar-collapse(role='navigation')
-          ul.nav.navbar-nav
-            li
-              a(href='/wifi-analytics') ANALYTICS
-            li
-              a(href='/features') FEATURES
-            li
-              a(data-no-turbolink='true', href='/how-it-works') HOW IT WORKS
-            li
-              a#plans_link.text-success(href='/wifi-plans') PLANS
-
+    include header-nav
     .main
       block content
 
 
       footer#footer
-
-        .container
-          .row.text-left
-            .col-xs-4
-              h2 More Stuff
-              ul.list-unstyled
-                li
-                  a(href='http://support.polkaspots.com') Help &amp; Support
-                li
-                  a(href='http://blog.polkaspots.com') Blog
-                li
-                  a(href='http://support.polkaspots.com') Wi-Fi Lessons
-                li
-                  a(href='http://support.polkaspots.com') Open-source Firmware
-                li
-                  a(href='http://support.polkaspots.com') Buy a Box
-                li
-                  a(href='http://support.polkaspots.com') Meet the Team
-                li
-                  a(href='http://support.polkaspots.com') Le Terms
-            .col-xs-4
-              h2 Get in Touch
-              p We're based in East London, UK
-              p
-                | 62 Britton Street
-                br
-                | London EC1M 5UY
-
-              p
-                | Call: +44(0)20 7183 1471
-                br
-                | Email: hello@polkaspots.com
-              p
-                | Twitter: @polkaspots
-                br
-                | Facebook: facebook.com/polkaspots
-
-              p
-                | We're a limited company and our company number is 05508105. I think our VAT number is XXXXXXX
-              p
-                | We're registered in the UK at the above address.
-                br
-                | Fancy pants.
+        include footer
 
 
-            .col-xs-4
-              h2 Ahoy there captain
-              p For pleasantly infrequent news and update, put your email in here:
-              form
-                input(type='text', class='form-control', placeholder="Type your email here please")
-
-              hr.grey-line
-              p
-                | Written exclusively with vim, hosted on Heroku and powered with NodeJS. We&nbsp;
-                i.fa.fa-heart &nbsp;
-                | open-source and all things digital. We love you too, promise.
-
-
-    script(type='text/javascript', src='/javascripts/jquery.js')
+    script(type='text/javascript', src='/javascripts/imagesloaded.js')
     script(type='text/javascript', src='/javascripts/polkaspots.js')
     include olark.html
+    include statuspage.html
 

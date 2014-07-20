@@ -12,7 +12,7 @@ block content
       .col-xs-4
         img(src='../images/wifi-firmware/sinky-panda-wifi-firmware.png', class='img img-responsive')
       .col-xs-4
-        img(src='../images/wifi-firmware/download-arrows.png', class='img img-responsive')
+        img(src='../images/wifi-firmware/download-arrows.png', class='img img-responsive wifi-download')
       .col-xs-4
         img(src='../images/wifi-firmware/wifi-router.png', class='img img-responsive')
     .row
@@ -28,16 +28,17 @@ block content
         h3 Step 3. Remote Control
         p Instantly your box becomes a mega-router with powerful features and reports.
 
-    hr
+    hr#compatible
     section
       .row
         .col-xs-12
           h1 Compatible Access Points
-          p We currently support the following access points for firmware. If you want to take advantage of our reports and captive portal, a list devices that are compatible with Cucumber Tony can be found here.
+          p The following devices are fully compatible with Cucumber Tony. This means you can cloud-manage every aspect of your Wi-Fi networks.
 
-      .row.text-left
+      .row
 
-        .col-xs-4
+        .col-xs-3
+        .col-xs-3.text-left
           h4 Ubiquiti
           ul.list-unstyled
             li Ubiquiti AirRouter
@@ -48,7 +49,7 @@ block content
             li Ubiquiti UniFi Nanostation M2
             li Ubiquiti UniFi Bullet M2
 
-        .col-xs-4
+        .col-xs-3.text-left
           h4 Netgear
           ul.list-unstyled
             li Netgear WNDR3800*
@@ -57,8 +58,22 @@ block content
           ul.list-unstyled
             li My Net N600*
 
+      .row
+        .col-xs-12
+          h1 Compatible With Captive Portal and Analytics
+          p If you want to take advantage of our reports and captive portal, here's a list devices that are compatible with Cucumber Tony.
+
+          ul.list-unstyled.list-inline
+            li Aruba
+            li OpenMesh
+            li Cisco Meraki
+            li Xirrus
+
+
 
     section
       .row
         .col-xs-12.text-left
           p.small * Firmare available on pre-release. Just email oh@polkaspots.com to request the pre-release version
+
+

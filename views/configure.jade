@@ -2,12 +2,8 @@ extends layout
 
 block content
   section.more-features
-    .hero
-      .content
-        h1 More Stuff to Play With
-        h2 Every plan includes our core-features; social logins, captive portal, rocket-powered cloud control and analytics. Peruse all the features below.
-        include more-features-header
-  hr
+    include more-features-header
+  hr#access
   .container
     section
      .row
@@ -23,7 +19,7 @@ block content
       .col-xs-6
          img(src="/images/wifi-features/more-wifi-features/wifi-login-method.png", class='img img-responsive')
 
-    hr
+    hr#timed
     section
      .row
       .col-xs-6
@@ -39,7 +35,7 @@ block content
 
         p To manage this you can use a stricter access method for the second login, like a voucher code which encourages people to come to the counter.  Or charge for extra time online.
 
-    hr
+    hr#restrictions
     section
      .row
 
@@ -52,7 +48,7 @@ block content
       .col-xs-6
         img(src="/images/wifi-features/more-wifi-features/wifi-speed-restrictions.png", class='img img-responsive')
 
-    hr
+    hr#events
     section
      .row
 

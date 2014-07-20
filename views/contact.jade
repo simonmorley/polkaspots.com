@@ -1,0 +1,64 @@
+extends layout
+
+block content
+  .contact
+    link(data-turbolinks-track='true', href='../stylesheets/mapbox.css', media='all', rel='stylesheet')
+    script(data-turbolinks-track='true', src='../javascripts/mapbox.js')
+
+    section.contact
+      .hero-na
+        h1 MAKE CONTACT, GO ON.
+        h3
+          | Have you tried rebooting it? Seriously.
+        .status_page
+    .container
+      .row.text-left
+        .col-xs-4.contact-frame
+          h4 Oh hello, it's you.
+          p.small.text-muted This is all in the footer but we'll repeat it again.
+
+          p Sales: +44(0)20 7183 1471
+          p.small.text-info For phone support, please use the number in your portal. You'll also need your customer ID.
+
+          hr.light-line
+          p
+            b Send presents to:
+          p
+            | 62 Britton Street
+            br
+            | London EC1M 5UY
+
+          hr.light-line
+          p
+            b Send emails to:
+
+          p
+            | General:&nbsp;
+            a(href='mailto:hello@polkaspots.com')
+              | hello@polkaspots.com
+          p
+            | Support:&nbsp;
+            a(href='mailto:support@polkaspots.com')
+              | support@polkaspots.com
+
+          hr.light-line
+          p
+            b Help Forums:&nbsp;
+            a(href="http://polkaspots.com/support") polkaspots.com/support
+          p
+            b Twitter:&nbsp;
+            a(href="http://twitter.com/polkaspots") @polkaspots
+
+          p
+            b Facebook:&nbsp;
+            a(href="https://facebook.com/polkaspots.com") facebook.com/polkaspots
+
+          p
+            b Status Page:&nbsp;
+            a(href="http://status.polkaspots.com/") status.polkaspots.com
+
+        .col-xs-8
+          #contact_map
+    section
+      p We all live here, Monday to Friday (9am until late). Sometimes we're in on weekends. Sometimes we barbeque on the roof.
+

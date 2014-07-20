@@ -9,30 +9,8 @@ html
     link(rel='stylesheet', href='/stylesheets/scroll.css')
     link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
   body.loading
-    header#header.navbar.navbar-inverse.navbar-fixed-top.bs-docs-nav(role='banner')
-      .container
-        .navbar-header
-          button.navbar-toggle(data-target='.bs-navbar-collapse', data-toggle='collapse', type='button')
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand(href='/')
-            img(height='28px', src='/images/logos/polkaspots.svg')
+    include header-nav
 
-        nav.collapse.navbar-collapse.bs-navbar-collapse(role='navigation')
-          ul.nav.navbar-nav
-            li
-              a(href='/wifi-analytics') ANALYTICS
-            li
-              a(href='/features') FEATURES
-            li
-              a(data-no-turbolink='true', href='/how-it-works') HOW IT WORKS
-            li
-              a#plans_link.text-success(href='/wifi-plans') PLANS
-
-    <!-- block header -->
-    .container
     block content
 
       footers

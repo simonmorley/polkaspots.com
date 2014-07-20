@@ -6,8 +6,10 @@ block content
       .black-banner
         h1 MASSIVE DATA
         h2 Nice ways to track performance and useful ways improve your environment.
-        a(href="#", class="btn btn-large btn-default") READ MORE
-  hr
+        br
+        .next(data-next="journeys")
+          a(href="#", class="btn btn-large btn-default btn-white-txt") READ MORE
+  hr#journeys
   .container
     section
      .row
@@ -21,7 +23,7 @@ block content
       .col-xs-6
          img(src="/images/wifi-analytics/wifi-traffic-large.png", class='img img-responsive')
 
-  hr
+  hr#hangouts
   section.flows
     .hero
       .content
@@ -32,7 +34,7 @@ block content
 
 
   hr
-  section
+  section#explorers
     .content
       h1 Explorers
       h2
@@ -51,8 +53,9 @@ block content
 
       h3 Lots of wireless access points capture data. You can input your exsiting data into Cucumber Tony to visualise and analyse.
 
-      p If you'd like something bespoke analysed, get in touch.
+      p
+        | If you'd like something bespoke analysed, &nbsp;
+        a(href="/contact") get in touch.
 
-      a(href="#", class="btn btn-large btn-default") READ MORE
 
 

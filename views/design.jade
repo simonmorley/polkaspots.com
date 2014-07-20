@@ -2,12 +2,9 @@ extends layout
 
 block content
   section.more-features
-    .hero
-      .content
-        h1 More Stuff to Play With
-        h2 Every plan includes our core-features; social logins, captive portal, rocket-powered cloud control and analytics. Peruse all the features below.
-        include more-features-header
-  hr
+    include more-features-header
+
+  hr#login-pages
   .container
     section
      .row
@@ -19,12 +16,13 @@ block content
       .col-xs-4.text-left
         h2 It's Your Design
         p Pick a layout template and simply add images and text. There's space for advertsing and newsfeeds. Or start from scratch and integrate your own code.
+        p You can even use our fancy captive portal with other manufacturer's devices including Ruckus, Aruba, Xirrus, Cisco Meraki and OpenMesh.
 
 
       .col-xs-8
          img(src="/images/wifi-features/more-wifi-features/white-label-login-pages.png", class='img img-responsive')
 
-    hr
+    hr#mobile
     section
      .row
       .col-xs-8
@@ -34,7 +32,7 @@ block content
         h2 Mobile Ready
         p All login pages are responsive, in fact they might even look better on a mobile.
 
-    hr
+    hr#message
     section
      .row
 

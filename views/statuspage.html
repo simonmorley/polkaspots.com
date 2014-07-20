@@ -1,0 +1,10 @@
+<script type="text/javascript" src="https://statuspage-production.s3.amazonaws.com/se.js"></script>
+<script type="text/javascript">
+window.fetchStatusPage({
+  pageId: 'lrlkfrhrjrpk',     // required
+  renderTo: '.status_page',        // optional, will render summary of status
+  successCallback: function(data) {   // optional, for full control of data returned
+    console.log(data.status.description);
+  }
+});
+</script>

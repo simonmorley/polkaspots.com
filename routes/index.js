@@ -12,27 +12,27 @@ router.get('/features', function(req, res) {
 });
 
 /* GET more feautres configure page. */
-router.get('/configure', function(req, res) {
+router.get('/features/configure', function(req, res) {
   res.render('configure', { title: 'Features' });
 });
 
 /* GET more feautres create page. */
-router.get('/create', function(req, res) {
+router.get('/features/create', function(req, res) {
   res.render('create', { title: 'Features' });
 });
 
 /* GET more feautres design page. */
-router.get('/design', function(req, res) {
+router.get('/features/design', function(req, res) {
   res.render('design', { title: 'Features' });
 });
 
 /* GET more feautres monitor page. */
-router.get('/monitor', function(req, res) {
+router.get('/features/monitor', function(req, res) {
   res.render('monitor', { title: 'Features' });
 });
 
 /* GET more feautres secure page. */
-router.get('/wifi-security', function(req, res) {
+router.get('/features/wifi-security', function(req, res) {
   res.render('secure', { title: 'Features' });
 });
 
@@ -54,6 +54,16 @@ router.get('/wifi-plans', function(req, res) {
 /* GET wifi firmware page. */
 router.get('/opensource-wifi-firmware', function(req, res) {
   res.render('firmware', { title: 'Analytics' });
+});
+
+/* GET cucumbertony page. */
+router.get('/cucumber-tony', function(req, res) {
+  res.render('tony', { title: 'Analytics' });
+});
+
+/* GET contact page. */
+router.get('/contact*', function(req, res) {
+  res.render('contact', { title: 'Analytics' });
 });
 
 

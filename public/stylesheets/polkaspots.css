@@ -4,7 +4,7 @@ html, body {
   height: 100%;
   -webkit-font-smoothing: antialiased;
   font-family: "Helvetica Neue",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.2;
   /* background: #F8FAFC; */
   color: #4e5665;
@@ -15,8 +15,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 300;
   text-transform: titlecase;
 }
+
+h2, .h2 {
+  font-size: 22px;
+  line-height: 34px;
+}
+
 h3, .h3 {
-  font-size: 21px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 h3 {
@@ -24,12 +31,44 @@ h3 {
 }
 
 h4 {
+  margin: 18px 0 10px 0;
   font-weight: 500;
 }
 
 p {
   color: #5f6a7d;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 18px;
+}
+
+a {
+  color: #7E417E;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.contact .status_page {
+  margin-top: -35px;
+  color: #999999;
+  font-size: 12px;
+}
+
+.contact .status_page a {
+  color: #999999;
+}
+
+#footer a {
+  color: #5f6a7d;
+  text-decoration: none;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+#footer a:hover {
+  color: #5f6a7d;
+  text-decoration: underline;
 }
 
 .left {
@@ -43,7 +82,13 @@ hr {
 }
 
 .grey-line {
-  border-top: 1px solid #5f6a7d;
+  border-top: 1px solid #461146;
+  margin: 20px 0 20px 0;
+}
+
+.light-line {
+  border-top: 1px solid #F6F6F6;
+  margin: 20px 0 30px 0;
 }
 
 .navbar-inverse {
@@ -56,6 +101,7 @@ hr {
 .navbar-nav > li > a {
   padding-top: 1px;
   padding-bottom: 0px;
+  font-size: 14px;
 }
 
 .navbar-brand {
@@ -63,9 +109,12 @@ hr {
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #496F9C;
-  background-color: #fff;
-  font-size: 14px;
+  color: #7E417E;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #7E417E;
+  background-color: transparent;
 }
 
 /* Pricing Tables */
@@ -179,7 +228,7 @@ ul.pricing-table {
 /* Set the fixed height of the footer here */
 /* #push, */
 #footer {
-  height: 400px;
+  min-height: 400px;
   background-color: #330033;
   /* margin-top: -60px; /1* negative value of footer height *1/ */
   padding: 20px 0 0 0;
@@ -240,6 +289,26 @@ p.hero-text {
   background-color: transparent;
 }
 
+.btn-light-txt {
+  color: #5f6a7d;
+}
+
+.btn-white-txt {
+  color: #FFF;
+}
+
+.cm-loading {
+  display: none;
+}
+
+.cm-error {
+  display: none;
+}
+
+.cm-success {
+  display: none;
+}
+
 /* */
 .main {
   margin-top: -40px;
@@ -252,7 +321,42 @@ section {
 
 .discontinued {
   height: 500px;
-  margin-top:
+  margin-top: 0px;
+}
+
+/* TONY */
+
+.tony {
+  height: 200px;
+  margin-top: 0px;
+}
+
+/* CONTACT */
+
+section.contact {
+  margin-top: 100px;
+  height: 125px;
+}
+
+.contact p {
+  margin-bottom: 10px;
+  line-height: 16px;
+}
+
+h3.map {
+  margin-bottom: 10px;
+}
+
+#contact_map {
+  width: 100%;
+  height: 500px;
+  margin: 0 0 20px 0;
+}
+
+.contact-frame {
+  border: 1px solid #F6F6F6;
+  padding: 10px;
+  /* height: 500px; */
 }
 
 /* FEATURES */
@@ -260,6 +364,13 @@ section {
 .features {
   height: 500px;
   background-color: transparent;
+}
+
+/* FIRMWARE */
+
+.wifi-download {
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
 /* .features .hero { */
@@ -281,14 +392,46 @@ section {
 /* MORE FEATURES */
 
 .more-features {
-  height: 500px;
+  height: 420px;
   background-color: transparent;
+}
+
+.more-features a {
+  text-decoration: none;
+}
+
+.more-features a:hover {
+  text-decoration: underline;
+}
+
+h4.create a {
+  color: #1999ce;
+}
+
+h4.design a {
+  color: #f1656b;
+}
+
+h4.configure a {
+  color: #f5d62b;
+}
+
+h4.secure a {
+  color: #60b147;
+}
+
+h4.monitor a {
+  color: #ee5723;
+}
+
+h4.analyse a {
+  color: #ed228d;
 }
 
 /* Analytics */
 
 .analytics {
-  height: 550px;
+  height: 400px;
   background-color: transparent;
 }
 
@@ -312,7 +455,7 @@ section {
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-size: 1140px auto;
-  background-image:url('../images/wifi-analytics/wifi-hangouts.png');
+  background-image:url('../images/wifi-analytics/wifi-hangouts.jpg');
   background-position: 50% 0px;
 }
 

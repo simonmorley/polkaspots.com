@@ -2,12 +2,9 @@ extends layout
 
 block content
   section.more-features
-    .hero
-      .content
-        h1 More Stuff to Play With
-        h2 Every plan includes our core-features; social logins, captive portal, rocket-powered cloud control and analytics. Peruse all the features below.
-        include more-features-header
-  hr
+    include more-features-header
+
+  hr#public
   .container
     section
      .row
@@ -23,7 +20,7 @@ block content
       .col-xs-6
          img(src="/images/wifi-features/more-wifi-features/public-private-networks.png", class='img img-responsive')
 
-    hr
+    hr#content-filtering
     section
      .row
       .col-xs-6
@@ -33,7 +30,7 @@ block content
         h2 Content Filtering
         p The Internet is full of some great, and some not so great stuff. Cucumber Tony lets you block the nasty bits that could get you into trouble. Choose a filtering level depending on your needs. Or integrate your exisitng filtering service.
 
-    hr
+    hr#captive-portal
     section
      .row
 
@@ -44,7 +41,7 @@ block content
       .col-xs-6
          img(src="/images/wifi-features/more-wifi-features/wifi-captive-portal.png", class='img img-responsive')
 
-    hr
+    hr#block
     section
      .row
       .col-xs-6

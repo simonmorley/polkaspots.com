@@ -2,12 +2,9 @@ extends layout
 
 block content
   section.more-features
-    .hero
-      .content
-        h1 More Stuff to Play With
-        h2 Every plan includes our core-features; social logins, captive portal, rocket-powered cloud control and analytics. Peruse all the features below.
-        include more-features-header
-  hr
+    include more-features-header
+
+  hr#usage-reports
   .container
     section
      .row
@@ -24,7 +21,7 @@ block content
       .col-xs-6
          img(src="/images/wifi-features/more-wifi-features/wifi-usage-reports.png", class='img img-responsive')
 
-    hr
+    hr#realtime
     section
      .row
       .col-xs-6
@@ -34,7 +31,7 @@ block content
         h2 Realtime Updates
         p Cucumber Tony continuously monitors every Wi-Fi box. The box's 'heartbeat' shows if it's connected and working. If it stops heartbeating, you'll know the exact moment it went offline, information you need to diagnose a fault quickly and easily.
 
-    hr
+    hr#crash-alerts
     section
      .row
 
@@ -46,7 +43,7 @@ block content
       .col-xs-6
         img(src="/images/wifi-features/more-wifi-features/crash-alerts.png", class='img img-responsive')
 
-    hr
+    hr#speedtests
     section
      .row
 
@@ -58,7 +55,7 @@ block content
         p A slow or 'flapping' broadband connection equals slow and unreliable Wi-Fi. Cucumber Tony will run a speed test on your broadband every night. If it's running too slowly, or the connection is dropping in and out, you'll get an email alert.
 
 
-    hr
+    hr#health
     section
      .row
 

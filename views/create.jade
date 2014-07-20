@@ -2,12 +2,9 @@ extends layout
 
 block content
   section.more-features
-    .hero
-      .content
-        h1 More Stuff to Play With
-        h2 Every plan includes our core-features; social logins, captive portal, rocket-powered cloud control and analytics. Peruse all the features below.
-        include more-features-header
-  hr
+    include more-features-header
+
+  hr#locations
   .container
     section
      .row
@@ -25,7 +22,7 @@ block content
       .col-xs-6
          img(src="/images/wifi-features/more-wifi-features/wifi-location-map.png", class='img img-responsive')
 
-    hr
+    hr#grow
     section
      .row
       .col-xs-6
@@ -35,7 +32,7 @@ block content
         h2 Managing Hardware
         p Once you've created your Wi-Fi location, assign all your Wi-Fi boxes to the location. You can now control each Wi-Fi box individually or per location.
 
-    hr
+    hr#copy
     section
      .row
 
