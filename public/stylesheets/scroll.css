@@ -83,8 +83,8 @@ main {
 
 #slide-5 .bcg {
   background-image:url('../images/wifi-features/wifi-dashboard.png');
-  background-size: cover;
-  background-attachment: fixed;
+  /* background-size: cover; */
+  /* background-attachment: fixed; */
   /* z-index: 4; */
 }
 
@@ -288,15 +288,15 @@ main {
     color: black;
   }
 
-  /* #slide-5 { */
-  /*   position: relative; */
-  /* } */
+  #slide-5 {
+    position: relative;
+  }
 
-  /* #slide-5 .bcg { */
-  /*   background-image: none; */
-  /*   background-size: cover; */
-  /*   background-attachment: scroll; */
-  /* } */
+  #slide-5 .bcg {
+    background-image: none;
+    background-size: cover;
+    background-attachment: scroll;
+  }
 
   #easing-wrapper {
     margin-top: 0px;
