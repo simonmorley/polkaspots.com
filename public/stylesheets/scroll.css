@@ -77,10 +77,6 @@ main {
   background-image:url('../images/wifi-analytics/derby-flows.jpg')
 }
 
-#slide-5 {
-  position: relative;
-}
-
 #slide-5 .bcg {
   background-image:url('../images/wifi-features/wifi-dashboard.png');
   /* background-size: cover; */
@@ -294,8 +290,8 @@ main {
 
   #slide-5 .bcg {
     background-image: none;
-    background-size: cover;
-    background-attachment: scroll;
+    /* background-size: cover; */
+    /* background-attachment: scroll; */
   }
 
   #easing-wrapper {

@@ -431,7 +431,7 @@ h4.analyse a {
 /* Analytics */
 
 .analytics {
-  height: 400px;
+  height: 440px;
   background-color: transparent;
 }
 
@@ -510,7 +510,14 @@ h4.analyse a {
 .text-center {
   text-align: center;
   margin: 0 auto;
-  width:80%;
+  padding-left: 60px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  /* .main { */
+  /*   max-width: 1024px; */
+  /*   width: 100px; */
+  /* } */
 }
 
 @media screen and (max-width: 1200px) { /* Specific to this particular image */
