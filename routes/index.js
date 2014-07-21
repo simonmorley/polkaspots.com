@@ -79,6 +79,11 @@ router.get('/smart-wifi*', function(req, res) {
   res.end();
 });
 
+router.get('/shop*', function(req, res) {
+  res.redirect(301, "https://mywifi.polkaspots.com/shop?ref=www");
+  res.end();
+});
+
 router.get('/support.html', function(req, res) {
   res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us");
   res.end();

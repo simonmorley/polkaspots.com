@@ -3,19 +3,26 @@ extends layout
 block content
   section.how-wifi-works
     .hero
-      h1 Create Massive Wi-Fi Networks in Minutes
+      h1.white Create Massive Wi-Fi Networks in Minutes
   hr
   .container
     section
      .row
       .col-xs-12
-         h3
+         h3.white
            | Creating a hotspot is easy, there's no contract and, if you have a&nbsp;
            a(link='/compatible-access-points') compatible access point
            | , you don't even need to buy any extra hardware. Here's how you get awesome Wi-Fi that doesn't suck serious butt.
+      .col-xs-12.text-left
+        br
+        br
+        br
+        br
+        h3
+          | Get started in three easy steps...
       .col-xs-4.text-left
         h2.red Step 1. Create an Account
-        p 
+        p
           a(href="/signup") Create a Cucumber Tony account.&nbsp;
           | This'll let you manage all your Wi-Fi locations and access points from anywhere.
 
@@ -44,7 +51,13 @@ block content
 
         img(src="/images/how-wifi-works/wifi-plan.png", class='')
 
-        br
-        a(href='#', class='btn btn-success btn-lg') More Information
+      br
+    hr
+    section
+     .row
+      .col-xs-12
+        h3 You've read all that, good for you. Now go and have a look at the plans.
+        a(href='#', class='btn btn-default btn-lg') Le Plans
 
+    hr
 
