@@ -189,6 +189,10 @@ main {
     margin: 0 auto;
   }
 
+  p {
+    font-weight: normal;
+  }
+
   .bcg {
     background-position: center center;
     background-repeat: no-repeat;
@@ -217,13 +221,21 @@ main {
 
   .hsContent h1 {
     font-weight: 300;
+    color: black;
   }
 
   .hsBanner {
+    height: 1000px;
     width: 100%;
     background-image: none;
     margin-left: 0px;
+    margin-top: 300px;
   }
+
+  .btn-white-txt {
+    color: black;
+  }
+
 
   #slide-2 .bcg {
     background: none;
