@@ -513,11 +513,9 @@ h4.analyse a {
   padding-left: 60px;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1024px) {
-  .nav > li > a {
-    position: relative;
-    display: block;
-    padding: 10px 8px;
+@media (min-width: 768px) {
+  .container {
+    width: 95%;
   }
 }
 
@@ -525,6 +523,14 @@ h4.analyse a {
   img.bg {
     left: 50%;
     margin-left: -600px;   /* 50% */
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  .nav > li > a {
+    position: relative;
+    display: block;
+    padding: 4px 8px 10px 8px;
   }
 }
 
