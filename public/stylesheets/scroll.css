@@ -64,7 +64,25 @@ main {
   width: 100%;
 }
 
-#slide-1 .bcg {background-image:url("../images/library-original.jpg")}
+#slide-1 .bcg {
+  background-image:url("../images/library-original-black.jpg")
+}
+
+#slide-1 .hsContent {
+  color: white;
+  /* display: block; */
+  /* background-image:url("../images/trans-000-60.png"); */
+  /* background-size: 100px 100%; */
+}
+
+.hsBanner {
+  padding: 50px;
+  background-image:url("../images/trans-000-60.png");
+  /* margin-right: -100px; */
+  /* margin-left: -100px; */
+  /* width: 150%; */
+}
+
 #slide-2 .bcg {background: none; background-color: #010101; height: 400px; text-align: center}
 #slide-3 .bcg {background-image:url('../images/lookmum.jpg')}
 
@@ -147,6 +165,10 @@ main {
   color: #000 !important;
 }
 
+.white {
+  color: white!important;
+}
+
 .skLookMum {
   opacity: 0.6;
   background-color: black;
@@ -197,6 +219,12 @@ main {
     font-weight: 300;
   }
 
+  .hsBanner {
+    width: 100%;
+    background-image: none;
+    margin-left: 0px;
+  }
+
   #slide-2 .bcg {
     background: none;
     background-color: #330033;
@@ -211,11 +239,12 @@ main {
   }
 
   #slide-1 .hsContent {
-    bottom: 200px;
-    top: auto;
-    width: 100px;
-    margin: 0 auto;
-    height: 1000px;
+    max-width: 1400px;
+    /* bottom: 200px; */
+    /* top: auto; */
+    /* width: 100px; */
+    /* margin: 0 auto; */
+    /* height: 1000px; */
   }
 
   #slide-3 {

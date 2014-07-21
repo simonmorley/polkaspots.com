@@ -2,7 +2,7 @@ $(".next").click(function(event) {
   next = $(".next").data("next")
   $('html, body').animate({
     scrollTop: $("#" + next).offset().top
-  }, 2000);
+  }, 1000);
 });
 
 scrollInit = function() {

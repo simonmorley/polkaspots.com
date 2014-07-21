@@ -6,15 +6,20 @@ block content
       .bcg(data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px; ', data-anchor-target='#slide-1')
         .hsContainer
           .hsContent(data-center='opacity: 1', data-106-top='opacity: 0', data-anchor-target='#slide-1 h1')
-            h1
-              | Awesome Wi-Fi for Everyone
+            .hsBanner
+              h1
+                | Awesome Wi-Fi for Everyone
+                br
+                | Analytics for you. Cool potatoes.
+              h3
+                | Start doing it with Cucumber Tony today
               br
-              | Analytics for you. Cool potatoes.
-            h3
-              | Start doing it with Cucumber Tony today
-            .scroll
-              .chevron.next(data-next="slide-2")
-                i.fa.fa-chevron-down.fa-2x(data-next='slide-2')
+              br
+              .next(data-next="slide-2")
+                span(class="btn btn-default bt-large btn-white-txt") Read More 
+              .scroll
+                .chevron.next(data-next="slide-2")
+                  i.fa.fa-chevron-down.fa-2x(data-next='slide-2')
 
     section#slide-2
       .bcg(data-0='background-color:rgb(236,87,36);', data--1600-top='background-color:(237,42,139);', data-anchor-target='#slide-2')
@@ -23,7 +28,9 @@ block content
             h2(data-center='opacity: 1', data--200-bottom='opacity: 0', data-206-top='opacity: 1', data-106-top='opacity: 1', data-56-top='opacity: 0', data-anchor-target='#slide-2 h2')
               | Ready to roll in under 60 seconds.
             p(data-center='opacity: 1', data--200-bottom='opacity: 0', data-206-top='opacity: 1', data-106-top='opacity: 0', data-anchor-target='#slide-2 h2')
-              | Buy a Wi-Fi box or use a compatible device. Plug it in and off you go.
+              | Buy a Wi-Fi box or use a compatible device. Plug it in and off you go. Simple. Secure. Fast Wi-Fi.
+              br
+              | (Keep scrolling)
 
     section#slide-3.homeSlide
       div.bcg(data-center='background-position: 0px 50%;', data-bottom-top='background-position: 0px 40%;', data-top-bottom='background-position: 0px 30%;', data-anchor-target='#slide-3')
@@ -67,7 +74,7 @@ block content
           div.curtain(data-bottom-top='opacity: 0', data-106-top='height: 1%; opacity: 0; top: -10%;', data-center='height: 100%; opacity: 0.5; top: 0%;', data-anchor-target='#slide-4')
           div.copy(data-bottom-top='opacity: 0', data--100-bottom='opacity: 0', data--280-bottom='opacity: 1;', data-280-top='opacity: 1;', data-106-top='opacity: 0;', data-anchor-target='#slide-4 .copy')
             h2 Predict flows of traffic
-            h3 Stick this in your pipe. Using the data from your Wi-Fis, you can predict movement, watch flows of people and measure the pulse of your city.
+            h3.white Stick this in your pipe. Using the data from your Wi-Fis, you can predict movement, watch flows of people and measure the pulse of your city.
 
 
     section#slide-5.homeSlideTall
@@ -75,14 +82,14 @@ block content
         #easing_wrapper(data-0='display:none;', data-2800='display:block; top: 100px; opacity: 1', data-3400='opacity: 0;')
           #easing
             h1 Introducing Cucumber Tony. Hey Tony.
-            h3 Tony is probably the most awesome dashboard in the world. You use it to manage, monitor and control all your Wi-Fi devices. Need to update some setting while you're chilling with your homies? No problem, Tony will get that done in seconds.
+            h3 Sync your Wi-Fi access points to Tony, the most awesome Wi-Fi dashboard in the world. Use it to manage, monitor and control all your Wi-Fi devices. Tony has everything, from branded login pages to retail analytics.
             br
 
 
         #easing_wrapper.hidden-xs.hidden-sm(data-0='display:none;', data-3400='opacity:0; display: block;', data-3600='top: 200px; opacity: 1.0', data-4200='opacity: 0;')
           #easing
-            h1 Stick Something Awesome In There
-            h3 Tony is probably the most awesome dashboard in the world. You use it to manage, monitor and control all your Wi-Fi devices. Need to update some setting while you're chilling with your homies? No problem, Tony will get that done in seconds.
+            h1 Enterprise Features, Everyday Devices
+            h3 We're building in some seriously cool things to make your lives better. And best of all, new features appear automatically, there's no need to replace your old hardware. From small cafes to city centres, we've got you covered.
             br
 
   section#slide-6.homeSlide.homeSlideTall2
@@ -120,7 +127,7 @@ block content
               br
 
               h3 For more information about Cucumber Tony...
-              a(href="/features", class='btn btn-lg btn-default btn-light-txt') Read More.
+              a(href="/features", class='btn btn-lg btn-default btn-light-txt') Read More
 
 
 
