@@ -49,6 +49,22 @@ a {
   line-height: 24px;
 }
 
+.ie-sucky {
+  height: 10px;
+  font-size: 10px;
+  padding: 0 0px;
+  top: -10px;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  margin-left: -50px;
+  margin-right: 0px;
+}
+
+.ie-nav-bar {
+  top: 10px;
+}
+
 .contact .status_page {
   margin-top: -35px;
   color: #999999;
@@ -530,7 +546,7 @@ h4.analyse a {
   .nav > li > a {
     position: relative;
     display: block;
-    padding: 4px 8px 10px 8px;
+    padding: 2px 8px 10px 8px;
   }
 }
 

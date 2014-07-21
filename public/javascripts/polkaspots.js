@@ -1,38 +1,26 @@
-// ----------------------------------------------------------
-// A short snippet for detecting versions of IE in JavaScript
-// without resorting to user-agent sniffing
-// ----------------------------------------------------------
-// If you're not in IE (or IE version is less than 5) then:
-// ie === undefined
-// If you're in IE (>=5) then you can determine which version:
-// ie === 7; // IE7
-// Thus, to detect IE:
-// if (ie) {}
-// And to detect the version:
-// ie === 6 // IE6
-// ie > 7 // IE8, IE9 ...
-// ie < 9 // Anything less than IE9
-// ----------------------------------------------------------
+getIeVersion = function() {
+  var rv;
+  if (navigator.appName == 'Microsoft Internet Explorer')
+  {
+    var ua = navigator.userAgent;
+    var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+    if (re.exec(ua) != null)
+      rv = parseFloat( RegExp.$1 );
+  }
+  else if (navigator.appName == 'Netscape')
+  {
+    var ua = navigator.userAgent;
+    var re  = new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})");
+    if (re.exec(ua) != null)
+      rv = parseFloat( RegExp.$1 );
+  }
+  if(rv) {
+    $(".ie-hidden").hide()
+    $(".ie-sucks").show().addClass("ie-sucky")
+    $(".navbar-fixed-top").addClass("ie-nav-bar")
+  }
+};
 
-// UPDATE: Now using Live NodeList idea from @jdalton
-
-var ie = (function(){
-  var undef,
-      v = 3,
-      div = document.createElement('div'),
-      all = div.getElementsByTagName('i');
-
-  while (
-      div.innerHTML = '<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->',
-      all[0]
-  );
-
-  return v > 4 ? v : undef;
-  alert(v)
-
-}());
-
-$(document).ready(ie);
 
 $(".next").click(function(event) {
   next = $(".next").data("next")
@@ -103,6 +91,7 @@ adjustWindow = function() {
 
 }
 
+
 contactMap = function() {
   if ($("#contact_map").length > 0) {
     var map;
@@ -139,5 +128,7 @@ contactMap = function() {
 
 enquire.register("screen and (min-width : 768px)", initAdjustWindow(), false);
 
+
+$(document).ready(getIeVersion);
 $(document).ready(scrollInit);
 $(document).ready(contactMap);
