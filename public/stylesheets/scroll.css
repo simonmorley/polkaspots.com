@@ -263,7 +263,8 @@ main {
 
   #slide-2 .bcg {
     background: none;
-    background-color: #330033;
+    /* background-color: #330033; */
+    background-color: #ff5e90;
     height: 400px;
     text-align: center;
   }
