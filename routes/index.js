@@ -23,7 +23,7 @@ router.get('/features', function(req, res) {
 router.get('/features/configure', function(req, res) {
   res.render('configure', {
     title: 'Cloud Managed Wi-Fi Hotspots',
-    keywords: "Cloud wifi, wifi hotspots, wifi, cloud managed wifi",
+    keywords: "Cloud wifi, wifi hotspots, wifi, cloud managed wifi, Cucumber Tony",
     description: "Manage your wifi hotspots from our cloud-based Wi-Fi Hotspot dashboard",
   });
 });
