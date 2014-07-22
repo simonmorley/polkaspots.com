@@ -252,6 +252,10 @@ main {
     color: black;
   }
 
+  /* .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default { */
+  /*   color: #FFF; */
+  /* } */
+
   #slide-1 h1 {
     font-size: 18px;
     line-height: 24px;

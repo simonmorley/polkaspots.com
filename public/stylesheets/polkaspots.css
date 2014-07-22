@@ -66,6 +66,7 @@ a {
   margin-top: -35px;
   color: #999999;
   font-size: 12px;
+  line-height: 58px;
 }
 
 .contact .status_page a {
@@ -509,13 +510,15 @@ h4.analyse a {
 }
 
 .how-wifi-works .hero {
+  height: 700px;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-  /* background-size: 1140px auto; */
+  /* -webkit-background-size: cover; */
+  /* -moz-background-size: cover; */
+  /* -o-background-size: cover; */
   background-size: cover;
   background-image:url('../images/how-wifi-works/wifi-header.jpg');
   /* background-image:url('../images/how-wifi-works/create-wifi-hotspot.png'); */
-  background-position: 50% 0px;
+  background-position: 50% -155px;
 }
 
 
