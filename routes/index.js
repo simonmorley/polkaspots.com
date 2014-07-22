@@ -128,6 +128,16 @@ router.get('/blog*', function(req, res) {
 });
 
 
+/* GET image attributio page. */
+router.get('/thanks', function(req, res) {
+  res.render('thanks', {
+    title: 'Cloud managed WiFi with Cucumber Tony',
+    keywords: "Wi-Fi blog, Wireless Hotspot Info",
+    description: "Wireless hotspot services and tools. Cloud managed wifi hotspots",
+  });
+});
+
+
 /* 301 301 301 301 301 301 */
 
 /* GET discontinued smart wifi feature pages */
