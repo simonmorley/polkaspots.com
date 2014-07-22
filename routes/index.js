@@ -118,6 +118,15 @@ router.get('/contact*', function(req, res) {
   });
 });
 
+/* GET blob page. */
+router.get('/blog*', function(req, res) {
+  res.render('blog', {
+    title: 'Cloud managed love wifi',
+    keywords: "Wi-Fi blog, Wireless Hotspot Info",
+    description: "Wireless hotspot services and tools. Cloud managed wifi hotspots",
+  });
+});
+
 
 /* 301 301 301 301 301 301 */
 

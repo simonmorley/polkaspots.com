@@ -152,12 +152,11 @@ ul.pricing-table {
 }
 
 .pricing-table .title {
-  /* background-color: #dddddd; */
   padding: 0.6375em 1.25em;
   text-align: center;
   color: #465d6f;
   font-weight: 300;
-  font-size: 2em;
+  font-size: 1.6em;
 }
 
 .pricing-table .price {
@@ -551,7 +550,7 @@ h4.analyse a {
 .text-center {
   text-align: center;
   margin: 0 auto;
-  padding-left: 60px;
+  padding-left: 20px;
 }
 
 @media (min-width: 768px) {
@@ -584,7 +583,7 @@ h4.analyse a {
 }
 
 .black-banner {
-  background-image:url('../images/trans-000-40.png');
+  background-image:url('../images/trans-000-60.png');
   padding: 40px 40px 100px 40px;
   width: 100%;
   max-width: 1350px;
