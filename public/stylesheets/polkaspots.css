@@ -35,7 +35,7 @@ h4 {
 }
 
 p {
-  color: #5f6a7d;
+  color: #9197A2;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 18px;
@@ -74,7 +74,7 @@ a {
 }
 
 #footer a {
-  color: #5f6a7d;
+  color: #9197A2;
   text-decoration: none;
   line-height: 24px;
 }
@@ -512,9 +512,9 @@ h4.analyse a {
 .how-wifi-works .hero {
   height: 700px;
   background-repeat: no-repeat;
-  /* -webkit-background-size: cover; */
-  /* -moz-background-size: cover; */
-  /* -o-background-size: cover; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-image:url('../images/how-wifi-works/wifi-header.jpg');
   /* background-image:url('../images/how-wifi-works/create-wifi-hotspot.png'); */

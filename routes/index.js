@@ -3,67 +3,119 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Express' });
+  res.render('index', {
+    title: 'WiFi Analytics, Cloud Managed Wi-Fi',
+    keywords: "Cloud managed Wi-Fi Hotspots, Wi-Fi Analytics, Wi-Fi Software, Cloud WiFi, Wi-Fi Sotware",
+    description: "Manage your Wireless Hotspots from the cloud using from Cucumber Tony, the cloud-based Wi-Fi dashboard."
+  });
 });
 
 /* GET feeutres page. */
 router.get('/features', function(req, res) {
-  res.render('features', { title: 'Features' });
+  res.render('features', {
+    title: 'Wi-Fi Captive Portal, Wi-Fi Management',
+    keywords: "Captive Portal, Wi-Fi Hotspot Software, Cloud managed Wi-Fi, Wi-Fi hotspots",
+    description: "Cloud managed wireless networks from PolkaSpots Wireless Hotspots."
+  });
 });
 
 /* GET more feautres configure page. */
 router.get('/features/configure', function(req, res) {
-  res.render('configure', { title: 'Features' });
+  res.render('configure', {
+    title: 'Cloud Managed Wi-Fi Hotspots',
+    keywords: "Cloud wifi, wifi hotspots, wifi, cloud managed wifi",
+    description: "Manage your wifi hotspots from our cloud-based Wi-Fi Hotspot dashboard",
+  });
 });
 
 /* GET more feautres create page. */
 router.get('/features/create', function(req, res) {
-  res.render('create', { title: 'Features' });
+  res.render('create', {
+    title: 'Cloud Managed Wi-Fi Hotspot Systems',
+    keywords: "Create Wi-Fi Hotspot, WiFi dashboard, Free Cloud Managed WiFi",
+    description: "WiFi hotspots with facebook logins, Cloud managed Wi-Fi Dashboard",
+  });
 });
 
 /* GET more feautres design page. */
 router.get('/features/design', function(req, res) {
-  res.render('design', { title: 'Features' });
+  res.render('design', {
+    title: 'Facebook Wi-Fi Hotspot Captive Portal',
+    keywords: "WiFi Hotspots, Cloud managed Wireless Networks, Cloud based Wireless, Cloud WiFi",
+    description: "Cloud managed wireless networks for everyone, enterprise Wi-Fi features, everyday hardware",
+  });
 });
 
 /* GET more feautres monitor page. */
 router.get('/features/monitor', function(req, res) {
-  res.render('monitor', { title: 'Features' });
+  res.render('monitor', {
+    title: 'Cloud managed Wi-Fi Software',
+    keywords: "Cloud-wifi, Cloud Managed WiFi, Cloud Managed Wireless Software, Cloud Public Wi-Fi",
+    description: "Managed your Wireless Hotspots from our cloud-managed Wi-Fi Hotspot dashboard",
+  });
 });
 
 /* GET more feautres secure page. */
 router.get('/features/wifi-security', function(req, res) {
-  res.render('secure', { title: 'Features' });
+  res.render('secure', {
+    title: 'Cloud managed Wi-Fi Security',
+    keywords: "Cloud Wi-Fi, Cloud Wireless Services, cloud based wireless software",
+    description: "Captive portal services and wireless hotspot management software",
+  });
 });
 
 /* GET analytics page. */
 router.get('/wifi-analytics', function(req, res) {
-  res.render('analytics', { title: 'Analytics' });
+  res.render('analytics', {
+    title: 'Wi-Fi Analytics, Retail Analytics',
+    keywords: "Wi-Fi Analytics, Retail Analytics, Wi-Fi Hotspot Analytics, City Wi-Fi Analytics",
+    description: "Retail analytics dashboard, city wifi analytics software, wifi analytics services",
+  });
 });
 
 /* GET how it works page. */
 router.get('/how-it-works', function(req, res) {
-  res.render('how', { title: 'Analytics' });
+  res.render('how', {
+    title: 'Cloud Managed Wi-Fi Networks',
+    keywords: "Cloud managed Wi-Fi, Retail Analytics, Wi-Fi Analytics, City Wi-Fi, Town Wi-Fi",
+    description: "Cloud based Wi-Fi services, retail analytics, wifi analytics sofware",
+  });
 });
 
 /* GET wifi plans page. */
 router.get('/wifi-plans', function(req, res) {
-  res.render('plans', { title: 'Analytics' });
+  res.render('plans', {
+    title: 'Cloud Managed Wi-Fi Hotspot Plans',
+    keywords: "WiFi Plans, Free Wi-Fi, Wireless Hotspots, WiFi Hotspots, Wi-Fi Services",
+    description: "Cloud managed wireless hotspots and retail wifi analytics",
+  });
 });
 
 /* GET wifi firmware page. */
 router.get('/opensource-wifi-firmware', function(req, res) {
-  res.render('firmware', { title: 'Analytics' });
+  res.render('firmware', {
+    title: 'Opensource Wi-Fi Hotspot Firmware',
+    keywords: "WiFi Firmware, Router Firware, Hotspot Firmware, Cloud managed wifi software",
+    description: "Opensource router firmware from PolkaSpots Wireless Hotspots",
+  });
 });
 
 /* GET cucumbertony page. */
 router.get('/cucumber-tony', function(req, res) {
-  res.render('tony', { title: 'Analytics' });
+  res.render('tony', {
+    title: 'Cucumber Tony Cloud Management',
+    keywords: "Cucumber Tony, Wi-Fi Management, Cloud-based WiFi software, Retail WiFi Analytics",
+    description: "Manage thousands of devices with Cucumber Tony, the cloud based wifi and wifi analytics software",
+  });
 });
 
 /* GET contact page. */
 router.get('/contact*', function(req, res) {
-  res.render('contact', { title: 'Analytics' });
+  res.render('contact', {
+    title: 'Contact Cucumber Tony Wi-Fi Hotspots',
+    keywords: "WiFi, Wireless, WiFi Hotspots, City Wi-Fi, Retail analytics, city analytics",
+    description: "WiFi analytics software and cloud-based wifi hotspot management services",
+  });
 });
 
 
@@ -71,7 +123,7 @@ router.get('/contact*', function(req, res) {
 
 /* GET discontinued smart wifi feature pages */
 router.get('/smart-wifi', function(req, res) {
-  res.render('smart-wifi', { title: 'Analytics' });
+  res.render('smart-wifi', { title: 'Smart Wi-Fi, Cloud Managed Wi-Fi' });
 });
 
 router.get('/smart-wifi*', function(req, res) {
@@ -80,7 +132,7 @@ router.get('/smart-wifi*', function(req, res) {
 });
 
 router.get('/shop*', function(req, res) {
-  res.redirect(301, "https://mywifi.polkaspots.com/shop?ref=www");
+  res.redirect(301, "https://mywifi.polkaspots.com/buy?ref=www");
   res.end();
 });
 
