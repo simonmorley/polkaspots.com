@@ -189,8 +189,10 @@ main {
   /* background-image:url("../images/trans-000-60.png"); */
 }
 
-/* section { */
-/* } */
+img.staff {
+  margin: 40px auto 40px auto;
+}
+
 
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
 
@@ -369,6 +371,7 @@ main {
   }
 
   #slide-5 .bcg {
+    height: 500px;
     background-image: none;
     /* background-size: cover; */
     /* background-attachment: scroll; */
@@ -376,11 +379,10 @@ main {
 
   #easing-wrapper {
     margin-top: 0px;
-    display: none;
+    display: block;
   }
 
   #easing {
-    display: none;
     padding-top: 0px;
     position: relative;
     margin: 0 auto;
@@ -391,8 +393,16 @@ main {
   }
 
   #slide-6 .hsContent {
-    height: 1240px;
+    height: 540px;
   }
+
+  img.staff {
+    margin: 20px 10px 40px -10px;
+  }
+
+  /* #slide-7 .hsContent { */
+  /*   height: 540px; */
+  /* } */
 
   .chevron {
     display: none;
