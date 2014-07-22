@@ -150,7 +150,7 @@ router.get('/support.html', function(req, res) {
   res.end();
 });
 
-router.get('/support/', function(req, res) {
+router.get('/support', function(req, res) {
   res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us");
   res.end();
 });
