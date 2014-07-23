@@ -82,6 +82,15 @@ router.get('/how-it-works', function(req, res) {
   });
 });
 
+/* GET how it works page. */
+router.get('/virgins*', function(req, res) {
+  res.render('virgins', {
+    title: 'Getting your cloud-managed Wi-Fi Hotspot box set up',
+    keywords: "Wireless hotspots, Wi-Fi Hotspots, Wireless Router",
+    description: "Cloud managed wireless hotspots for businesses",
+  });
+});
+
 /* GET wifi plans page. */
 router.get('/wifi-plans', function(req, res) {
   res.render('plans', {
@@ -160,7 +169,7 @@ router.get('/support.html', function(req, res) {
   res.end();
 });
 
-router.get('/support/', function(req, res) {
+router.get('/support', function(req, res) {
   res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us");
   res.end();
 });
