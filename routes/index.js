@@ -433,8 +433,34 @@ router.get('/wifi-hotspot-software-instructions', function(req, res) {
   res.end();
 });
 
+router.get('/portal/login-details', function(req, res) {
+  res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/articles/202803186");
+  res.end();
+});
+
+router.get('/portal/ns-lookup-guide', function(req, res) {
+  res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/articles/202803216");
+  res.end();
+});
+
+router.get('/portal/traceroute-guide', function(req, res) {
+  res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/articles/202803206");
+  res.end();
+});
+
+router.get('/portal/ping-guide', function(req, res) {
+  res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/articles/202931503");
+  res.end();
+});
+
+router.get('/portal/ip-guide', function(req, res) {
+  res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/articles/202803196");
+  res.end();
+});
+
 router.get('*', function(req, res){
   res.render('404', { title: 'Express' });
 });
 
 module.exports = router;
+
