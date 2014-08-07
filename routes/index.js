@@ -164,6 +164,11 @@ router.get('/shop*', function(req, res) {
   res.end();
 });
 
+router.get('/sync-disabled*', function(req, res) {
+  res.render('sync-disabled', { title: 'Cucumber Tony Sync Disabled' });
+  res.end();
+});
+
 router.get('/support.html', function(req, res) {
   res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us");
   res.end();
