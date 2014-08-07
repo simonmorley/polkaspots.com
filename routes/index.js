@@ -127,6 +127,15 @@ router.get('/contact*', function(req, res) {
   });
 });
 
+/* GET sync disabled page. */
+router.get('/sync-disabled*', function(req, res) {
+  res.render('sync_disabled', {
+    title: 'Contact Cucumber Tony Wi-Fi Hotspots',
+    keywords: "WiFi, Wireless, WiFi Hotspots, City Wi-Fi, Retail analytics, city analytics",
+    description: "WiFi analytics software and cloud-based wifi hotspot management services",
+  });
+});
+
 /* GET blob page. */
 router.get('/blog*', function(req, res) {
   res.render('blog', {
@@ -161,11 +170,6 @@ router.get('/smart-wifi*', function(req, res) {
 
 router.get('/shop*', function(req, res) {
   res.redirect(301, "https://mywifi.polkaspots.com/buy?ref=www");
-  res.end();
-});
-
-router.get('/sync-disabled*', function(req, res) {
-  res.render('sync-disabled', { title: 'Cucumber Tony Sync Disabled' });
   res.end();
 });
 
