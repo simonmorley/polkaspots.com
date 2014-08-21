@@ -442,6 +442,21 @@ router.get('/wifi-hotspot-software-instructions', function(req, res) {
   res.end();
 });
 
+router.get('/help/coova-login-pages', function(req, res) {
+  res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/articles/203318943");
+  res.end();
+});
+
+router.get('/help/meraki-login-pages', function(req, res) {
+  res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/articles/201069833-Adding-A-Meraki-to-Cucumber-Tony");
+  res.end();
+});
+
+router.get('/help/*', function(req, res) {
+  res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/");
+  res.end();
+});
+
 router.get('*', function(req, res){
   res.render('404', { title: 'Express' });
 });
