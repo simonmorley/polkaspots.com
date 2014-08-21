@@ -457,6 +457,11 @@ router.get('/help/network-types', function(req, res) {
   res.end();
 });
 
+router.get('/advanced-settings', function(req, res) {
+  res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/articles/203318963");
+  res.end();
+});
+
 router.get('/help/*', function(req, res) {
   res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/");
   res.end();
