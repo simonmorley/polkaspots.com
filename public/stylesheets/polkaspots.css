@@ -252,6 +252,10 @@ ul.pricing-table {
 /*   min-height: 600px; */
 /* } */
 
+.img-centre {
+  display: inline;
+}
+
 img.home-bg {
   /* Set rules to fill background */
   min-height: 600px;
