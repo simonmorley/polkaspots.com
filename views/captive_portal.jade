@@ -18,8 +18,8 @@ block content
   .container
     section
       .row
-        .col-xs-12.col-sm-12.col-md-6.text-left
-          h2 How does they work? What do they look like?
+        .col-xs-12.col-sm-6.col-md-6.text-left
+          h2 How do they work? What do they look like?
 
           p Everyone who connects to your public Wi-Fi network goes through a login page. This acts as your captive portal and automatically captures the right information about the device connecting to your Wi-Fi.
 
@@ -29,7 +29,7 @@ block content
           p
             a(href="/signup", class="btn btn-large btn-default") SIGN-UP
 
-        .col-xs-12.col-sm-12.col-md-6.text-center
+        .col-xs-12.col-sm-6.col-md-6.text-center
           img(src="/images/captive-portal/benitos-hat-wifi-login-screens.png", class='img img-responsive img-centre')
 
     hr
@@ -37,10 +37,10 @@ block content
      .row
       .col-xs-12
 
-        .col-xs-12.col-sm-12.col-md-6.text-center
+        .col-xs-12.col-sm-6.col-md-6.text-center
            img(src="/images/captive-portal/captive-portal-service-wifi-dashboard.png", class='img img-responsive')
 
-        .col-xs-12.col-sm-12.col-md-6.text-left
+        .col-xs-12.col-sm-6.col-md-6.text-left
           h2 Setting Up A Captive Portal
           p You set up your login pages and captive portal from Cucumber Tony - our magnificent Wi-Fi management dashboard.
 
@@ -66,18 +66,20 @@ block content
     hr
     section
       .row
-        .col-xs-12.col-sm-6.text-left
-          h2 Storing your data, complying with the law
-          p Having a captive portal means you will never be culpable for what somone else downloads. We safely and legally store the download history of your Wi-Fi hotspot for you. Should you run into problems you will be able to detect the rude person who's downloaded something illegal.
+        .col-xs-12
+          .row
+            .col-xs-12.col-sm-6.text-left
+              h2 Storing your data, complying with the law
+              p Having a captive portal means you will never be culpable for what somone else downloads. We safely and legally store the download history of your Wi-Fi hotspot for you. Should you run into problems you will be able to detect the rude person who's downloaded something illegal.
 
-          p Never fear, your data is important to us. We won't give it to just anyone. It's all about being responsible.
+              p Never fear, your data is important to us. We won't give it to just anyone. It's all about being responsible.
 
-          p
-            a(href="/signup", class="btn btn-large btn-default") SIGN-UP
-            &nbsp;
-            a(href="/contact", class="btn btn-large btn-default") GET IN TOUCH
-          br
-        .col-xs-12.col-sm-12.col-md-6.text-center
-         img(src="/images/captive-portal/wifi-login-screens-legal-compliance.png", class='img img-responsive img-center')
+              p
+                a(href="/signup", class="btn btn-large btn-default") SIGN-UP
+                &nbsp;
+                a(href="/contact", class="btn btn-large btn-default") GET IN TOUCH
+              br
+            .col-xs-12.col-sm-6.col-md-6.text-center
+             img(src="/images/captive-portal/wifi-login-screens-legal-compliance.png", class='img img-responsive img-center')
 
     include more-features-footer
