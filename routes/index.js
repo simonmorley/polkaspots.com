@@ -10,6 +10,15 @@ router.get('/', function(req, res) {
   });
 });
 
+/* GET captive portal page. */
+router.get('/captive-portal', function(req, res) {
+  res.render('captive_portal', {
+    title: 'Wi-Fi Captive Portal, Meraki Captive Portal, Ruckus Captive Portal',
+    keywords: "Captive Portal, Meraki Login Pages, Meraki Captive Portal, Ruckus Login Pages, Ruckus Captive Portal, WiFi Hotspot Login Pages",
+    description: "Simple and beautiful captive portals for all types of networks including Meraki, Cisco and Ruckus."
+  });
+});
+
 /* GET feeutres page. */
 router.get('/features', function(req, res) {
   res.render('features', {

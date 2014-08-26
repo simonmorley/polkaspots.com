@@ -148,26 +148,27 @@ main {
         padding: 0 8%;
         text-align: center
 }
-        .hsContent h2,
-        .copy h2 {
-                color: #ffffff;
-                font-size: 45px;
-                line-height: 48px;
-                margin-bottom: 12px;
-        }
-        .hsContent p {
-                width: 400px;
-                margin: 0 auto;
-                color: #b2b2b2;
-        }
-        .hsContent a {
-                color: #b2b2b2;
-                text-decoration: underline;
-        }
-        .bgBlack {
-                background-color: rgba(0,0,0,0.75);
-                padding: 3px 10px;
-        }
+
+.hsContent h2,
+.copy h2 {
+        color: #ffffff;
+        font-size: 45px;
+        line-height: 48px;
+        margin-bottom: 12px;
+}
+.hsContent p {
+        width: 400px;
+        margin: 0 auto;
+        color: #b2b2b2;
+}
+.hsContent a {
+        color: #b2b2b2;
+        text-decoration: underline;
+}
+.bgBlack {
+        background-color: rgba(0,0,0,0.75);
+        padding: 3px 10px;
+}
 
 
 

@@ -371,6 +371,13 @@ h3.map {
   /* height: 500px; */
 }
 
+/* Captive Portal */
+
+.captive-portal {
+  height: 350px;
+  background-color: transparent;
+}
+
 /* FEATURES */
 
 .features {
@@ -554,6 +561,7 @@ h4.analyse a {
 }
 
 @media (min-width: 768px) {
+
   .container {
     width: 95%;
   }
@@ -567,6 +575,15 @@ h4.analyse a {
 }
 
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
+
+  .text-right {
+    text-align: center;
+  }
+
+  .text-left {
+    text-align: center;
+  }
+
   .nav > li > a {
     position: relative;
     display: block;
