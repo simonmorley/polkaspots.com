@@ -102,7 +102,7 @@ router.get('/how-it-works', function(req, res) {
 
 /* GET how it works page. */
 router.get('/virgins*', function(req, res) {
-  if (req.query.ap_mac == '' || req.query.ap_mac == undefined ) {
+  if (req.query.mac == '' || req.query.mac == undefined ) {
     res.render('virgins', {
       title: 'Getting your cloud-managed Wi-Fi Hotspot box set up',
       keywords: "Wireless hotspots, Wi-Fi Hotspots, Wireless Router",
@@ -110,7 +110,7 @@ router.get('/virgins*', function(req, res) {
     });
   }
   else {
-    res.redirect(301, "https://mywifi.polkaspots.com/locations?virgins=yep&ap_mac=" + req.query.ap_mac);
+    res.redirect(301, "https://mywifi.polkaspots.com/locations?virgins=yep&ap_mac=" + req.query.mac);
     res.end();
   }
 });
