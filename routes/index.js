@@ -100,21 +100,20 @@ router.get('/how-it-works', function(req, res) {
   });
 });
 
-// /* GET how it works page. */
-// router.get('/virgins*', function(req, res) {
-//   console.log(req.query.ap_mac == undefined)
-//   if (req.query.ap_mac == '' || req.query.ap_mac == undefined ) {
-//     res.render('virgins', {
-//       title: 'Getting your cloud-managed Wi-Fi Hotspot box set up',
-//       keywords: "Wireless hotspots, Wi-Fi Hotspots, Wireless Router",
-//       description: "Cloud managed wireless hotspots for businesses",
-//     });
-//   }
-//   else {
-//     res.redirect(301, "https://mywifi.polkaspots.com/locations?virgins=yep&ap_mac=" + req.query.ap_mac);
-//     res.end();
-//   }
-// });
+/* GET how it works page. */
+router.get('/virgins*', function(req, res) {
+  if (req.query.ap_mac == '' || req.query.ap_mac == undefined ) {
+    res.render('virgins', {
+      title: 'Getting your cloud-managed Wi-Fi Hotspot box set up',
+      keywords: "Wireless hotspots, Wi-Fi Hotspots, Wireless Router",
+      description: "Cloud managed wireless hotspots for businesses",
+    });
+  }
+  else {
+    res.redirect(301, "https://mywifi.polkaspots.com/locations?virgins=yep&ap_mac=" + req.query.ap_mac);
+    res.end();
+  }
+});
 
 /* GET wifi plans page. */
 router.get('/wifi-plans', function(req, res) {
