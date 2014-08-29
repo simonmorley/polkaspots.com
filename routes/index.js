@@ -10,6 +10,15 @@ router.get('/', function(req, res) {
   });
 });
 
+/* GET home page. */
+router.get('/terms-of-service', function(req, res) {
+  res.render('terms', {
+    title: 'Terms and Conditions, WiFi Analytics, Cloud Managed Wi-Fi',
+    keywords: "Cloud managed Wi-Fi Hotspots, Wi-Fi Analytics, Wi-Fi Software, Cloud WiFi, Wi-Fi Sotware",
+    description: "Manage your Wireless Hotspots from the cloud using from Cucumber Tony, the cloud-based Wi-Fi dashboard."
+  });
+});
+
 /* GET captive portal page. */
 router.get('/captive-portal', function(req, res) {
   res.render('captive_portal', {
@@ -93,11 +102,18 @@ router.get('/how-it-works', function(req, res) {
 
 /* GET how it works page. */
 router.get('/virgins*', function(req, res) {
-  res.render('virgins', {
-    title: 'Getting your cloud-managed Wi-Fi Hotspot box set up',
-    keywords: "Wireless hotspots, Wi-Fi Hotspots, Wireless Router",
-    description: "Cloud managed wireless hotspots for businesses",
-  });
+  console.log(req.query.ap_mac == undefined)
+  if (req.query.ap_mac == '' || req.query.ap_mac == undefined ) {
+    res.render('virgins', {
+      title: 'Getting your cloud-managed Wi-Fi Hotspot box set up',
+      keywords: "Wireless hotspots, Wi-Fi Hotspots, Wireless Router",
+      description: "Cloud managed wireless hotspots for businesses",
+    });
+  }
+  else {
+    res.redirect(301, "https://mywifi.polkaspots.com/locations?virgins=yep&ap_mac=" + req.query.ap_mac);
+    res.end();
+  }
 });
 
 /* GET wifi plans page. */
