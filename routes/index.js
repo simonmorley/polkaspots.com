@@ -10,6 +10,15 @@ router.get('/', function(req, res) {
   });
 });
 
+/* GET friendly wifi page. */
+router.get('/friendly-wifi*', function(req, res) {
+  res.render('index', {
+    title: 'WiFi Analytics, Cloud Managed Wi-Fi',
+    keywords: "Cloud managed Wi-Fi Hotspots, Wi-Fi Analytics, Wi-Fi Software, Cloud WiFi, Wi-Fi Sotware",
+    description: "Manage your Wireless Hotspots from the cloud using from Cucumber Tony, the cloud-based Wi-Fi dashboard."
+  });
+});
+
 /* GET home page. */
 router.get('/terms-of-service', function(req, res) {
   res.render('terms', {
