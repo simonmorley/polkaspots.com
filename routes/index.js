@@ -119,7 +119,7 @@ router.get('/virgins*', function(req, res) {
     });
   }
   else {
-    res.redirect(301, "https://mywifi.polkaspots.com/locations?virgins=yep&ap_mac=" + req.query.mac);
+    res.redirect(301, "https://mywifi.polkaspots.com/locations?virgins=yep&ap_mac=" + req.query.called);
     res.end();
   }
 });
