@@ -10,8 +10,12 @@ html, body {
   text-align: center;
 }
 
+h1 {
+  font-family: "jaf-bernino-sans, Helvetica Neue",sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  text-transform: titlecase;
+  /* text-transform: titlecase; */
 }
 
 h2, .h2 {
@@ -252,6 +256,10 @@ ul.pricing-table {
 /*   min-height: 600px; */
 /* } */
 
+.img-centre {
+  display: inline;
+}
+
 img.home-bg {
   /* Set rules to fill background */
   min-height: 600px;
@@ -369,6 +377,13 @@ h3.map {
   border: 1px solid #F6F6F6;
   padding: 10px;
   /* height: 500px; */
+}
+
+/* Captive Portal */
+
+.captive-portal {
+  height: 350px;
+  background-color: transparent;
 }
 
 /* FEATURES */
@@ -528,7 +543,7 @@ h4.analyse a {
   margin-top: 120px;
   font-size: 46px;
   color: #2e3b4e;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .hero h2 {
@@ -554,6 +569,7 @@ h4.analyse a {
 }
 
 @media (min-width: 768px) {
+
   .container {
     width: 95%;
   }
@@ -567,6 +583,15 @@ h4.analyse a {
 }
 
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
+
+  .text-right {
+    text-align: center;
+  }
+
+  .text-left {
+    text-align: center;
+  }
+
   .nav > li > a {
     position: relative;
     display: block;

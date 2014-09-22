@@ -10,6 +10,33 @@ router.get('/', function(req, res) {
   });
 });
 
+/* GET friendly wifi page. */
+router.get('/friendly-wifi*', function(req, res) {
+  res.render('index', {
+    title: 'WiFi Analytics, Cloud Managed Wi-Fi',
+    keywords: "Cloud managed Wi-Fi Hotspots, Wi-Fi Analytics, Wi-Fi Software, Cloud WiFi, Wi-Fi Sotware",
+    description: "Manage your Wireless Hotspots from the cloud using from Cucumber Tony, the cloud-based Wi-Fi dashboard."
+  });
+});
+
+/* GET home page. */
+router.get('/terms-of-service', function(req, res) {
+  res.render('terms', {
+    title: 'Terms and Conditions, WiFi Analytics, Cloud Managed Wi-Fi',
+    keywords: "Cloud managed Wi-Fi Hotspots, Wi-Fi Analytics, Wi-Fi Software, Cloud WiFi, Wi-Fi Sotware",
+    description: "Manage your Wireless Hotspots from the cloud using from Cucumber Tony, the cloud-based Wi-Fi dashboard."
+  });
+});
+
+/* GET captive portal page. */
+router.get('/captive-portal', function(req, res) {
+  res.render('captive_portal', {
+    title: 'Wi-Fi Captive Portal, Meraki Captive Portal, Ruckus Captive Portal',
+    keywords: "Captive Portal, Meraki Login Pages, Meraki Captive Portal, Ruckus Login Pages, Ruckus Captive Portal, WiFi Hotspot Login Pages",
+    description: "Simple and beautiful captive portals for all types of networks including Meraki, Cisco and Ruckus."
+  });
+});
+
 /* GET feeutres page. */
 router.get('/features', function(req, res) {
   res.render('features', {
@@ -23,7 +50,7 @@ router.get('/features', function(req, res) {
 router.get('/features/configure', function(req, res) {
   res.render('configure', {
     title: 'Cloud Managed Wi-Fi Hotspots',
-    keywords: "Cloud wifi, wifi hotspots, wifi, cloud managed wifi",
+    keywords: "Cloud wifi, wifi hotspots, wifi, cloud managed wifi, Cucumber Tony",
     description: "Manage your wifi hotspots from our cloud-based Wi-Fi Hotspot dashboard",
   });
 });
@@ -84,11 +111,17 @@ router.get('/how-it-works', function(req, res) {
 
 /* GET how it works page. */
 router.get('/virgins*', function(req, res) {
-  res.render('virgins', {
-    title: 'Getting your cloud-managed Wi-Fi Hotspot box set up',
-    keywords: "Wireless hotspots, Wi-Fi Hotspots, Wireless Router",
-    description: "Cloud managed wireless hotspots for businesses",
-  });
+  if (req.query.mac == '' || req.query.mac == undefined ) {
+    res.render('virgins', {
+      title: 'Getting your cloud-managed Wi-Fi Hotspot box set up',
+      keywords: "Wireless hotspots, Wi-Fi Hotspots, Wireless Router",
+      description: "Cloud managed wireless hotspots for businesses",
+    });
+  }
+  else {
+    res.redirect(301, "https://mywifi.polkaspots.com/locations?virgins=yep&ap_mac=" + req.query.called);
+    res.end();
+  }
 });
 
 /* GET wifi plans page. */
@@ -121,6 +154,15 @@ router.get('/cucumber-tony', function(req, res) {
 /* GET contact page. */
 router.get('/contact*', function(req, res) {
   res.render('contact', {
+    title: 'Contact Cucumber Tony Wi-Fi Hotspots',
+    keywords: "WiFi, Wireless, WiFi Hotspots, City Wi-Fi, Retail analytics, city analytics",
+    description: "WiFi analytics software and cloud-based wifi hotspot management services",
+  });
+});
+
+/* GET sync disabled page. */
+router.get('/sync-disabled*', function(req, res) {
+  res.render('sync_disabled', {
     title: 'Contact Cucumber Tony Wi-Fi Hotspots',
     keywords: "WiFi, Wireless, WiFi Hotspots, City Wi-Fi, Retail analytics, city analytics",
     description: "WiFi analytics software and cloud-based wifi hotspot management services",
@@ -164,12 +206,7 @@ router.get('/shop*', function(req, res) {
   res.end();
 });
 
-router.get('/support.html', function(req, res) {
-  res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us");
-  res.end();
-});
-
-router.get('/support', function(req, res) {
+router.get('/support*', function(req, res) {
   res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us");
   res.end();
 });
@@ -423,7 +460,7 @@ router.get('/firmware-installation', function(req, res) {
   res.end();
 });
 
-router.get('/help/last_heartbeat', function(req, res) {
+router.get('/help/last_heartbeat*', function(req, res) {
   res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/articles/202814496");
   res.end();
 });
@@ -455,6 +492,30 @@ router.get('/portal/ping-guide', function(req, res) {
 
 router.get('/portal/ip-guide', function(req, res) {
   res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/articles/202803196");
+});
+
+router.get('/help/coova-login-pages', function(req, res) {
+  res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/articles/203318943");
+  res.end();
+});
+
+router.get('/help/meraki-login-pages', function(req, res) {
+  res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/articles/201069833-Adding-A-Meraki-to-Cucumber-Tony");
+  res.end();
+});
+
+router.get('/help/network-types', function(req, res) {
+  res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/articles/203318953");
+  res.end();
+});
+
+router.get('/advanced-settings', function(req, res) {
+  res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/articles/203318963");
+  res.end();
+});
+
+router.get('/help/*', function(req, res) {
+  res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/");
   res.end();
 });
 

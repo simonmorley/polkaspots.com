@@ -1,0 +1,85 @@
+extends layout
+
+block content
+  section.captive-portal
+    .hero
+      .row
+        .col-xs-12
+          h1 Wi-Fi Login Pages & Captive Portal
+          h2
+            | If you want to offer public Wi-Fi, you'll want a nice looking login page and captive portal.
+            br
+            | Login screens are the gateway to your Internet connection.
+
+          br
+          .next(data-next="main")
+            a(href="#", class="btn btn-large btn-success") READ MORE
+  hr#main
+  .container
+    section
+      .row
+        .col-xs-12.col-sm-6.col-md-6.text-left
+          h2 How do they work? What do they look like?
+
+          p Everyone who connects to your public Wi-Fi network goes through a login page. This acts as your captive portal and automatically captures the right information about the device connecting to your Wi-Fi.
+
+          P Your login page is really easy to design. Just pick a layout template and start adding your own images and text. Choose a login method, like a password or Facebook book authentication and you're away. You can even capture email addresses.
+
+          p All login pages are responsive, in fact they might even look better on a mobile.
+          p
+            a(href="/signup", class="btn btn-large btn-default") SIGN-UP
+
+        .col-xs-12.col-sm-6.col-md-6.text-center
+          img(src="/images/captive-portal/benitos-hat-wifi-login-screens.png", class='img img-responsive img-centre')
+
+    hr
+    section
+     .row
+      .col-xs-12
+
+        .col-xs-12.col-sm-6.col-md-6.text-center
+           img(src="/images/captive-portal/captive-portal-service-wifi-dashboard.png", class='img img-responsive')
+
+        .col-xs-12.col-sm-6.col-md-6.text-left
+          h2 Setting Up A Captive Portal
+          p You set up your login pages and captive portal from Cucumber Tony - our magnificent Wi-Fi management dashboard.
+
+          p One Cucumber Tony dashboard will manage as many Wi-Fi hotspots as you need. Just sync your PolkaSpots devices to your dashboard and you'll have a captive portal set up in seconds. If you need to change a setting just log back in. Sign up for an account for free.
+          p
+            a(href="/signup", class="btn btn-large btn-default") SIGN-UP
+
+    hr
+    section
+     .row
+      .col-xs-12
+         h1 Compatable Wi-Fi Access Points
+         p Already got hardware? No worries, you can use the PolkaSpots captive portal and login pages with other devices including Ruckus, Aruba, Xirrus, Cisco Meraki and OpenMesh. Just download the PolkaSpots firmare or integrate via your radius server.
+
+     .row
+      .col-xs-12.col-sm-6.text-right
+         img(src="/images/captive-portal/captive-portal-supported-manufacturers-left.png", class='img')
+
+      .col-xs-12.col-sm-6.text-left
+         img(src="/images/captive-portal/captive-portal-supported-manufacturers-right.png", class='img')
+
+
+    hr
+    section
+      .row
+        .col-xs-12
+          .row
+            .col-xs-12.col-sm-6.text-left
+              h2 Storing your data, complying with the law
+              p Having a captive portal means you will never be culpable for what somone else downloads. We safely and legally store the download history of your Wi-Fi hotspot for you. Should you run into problems you will be able to detect the rude person who's downloaded something illegal.
+
+              p Never fear, your data is important to us. We won't give it to just anyone. It's all about being responsible.
+
+              p
+                a(href="/signup", class="btn btn-large btn-default") SIGN-UP
+                &nbsp;
+                a(href="/contact", class="btn btn-large btn-default") GET IN TOUCH
+              br
+            .col-xs-12.col-sm-6.col-md-6.text-center
+             img(src="/images/captive-portal/wifi-login-screens-legal-compliance.png", class='img img-responsive img-center')
+
+    include more-features-footer
