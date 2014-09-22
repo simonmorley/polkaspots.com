@@ -3,7 +3,7 @@ html, body {
   padding-top: 24px;
   height: 100%;
   -webkit-font-smoothing: antialiased;
-  font-family: "Helvetica Neue",sans-serif;
+  font-family: open-sans, "Helvetica Neue",sans-serif;
   font-size: 16px;
   line-height: 1.2;
   color: #4e5665;
@@ -11,7 +11,7 @@ html, body {
 }
 
 h1 {
-  font-family: "jaf-bernino-sans, Helvetica Neue",sans-serif;
+  font-family: open-sans, "Helvetica Neue",sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -40,7 +40,7 @@ h4 {
 
 p {
   color: #9197A2;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 24px;
   margin-bottom: 18px;
 }
@@ -636,15 +636,15 @@ h4.analyse a {
   }
 
   p {
-    font-weight: 300;
+    /* font-weight: 300; */
   }
 
   a {
-    font-weight: 300;
+    /* font-weight: 300; */
   }
 
   #footer a {
-    font-weight: 300;
+    /* font-weight: 300; */
   }
 
 
