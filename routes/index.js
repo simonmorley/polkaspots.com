@@ -523,5 +523,10 @@ router.get('*', function(req, res){
   res.render('404', { title: 'Express' });
 });
 
+router.get('/how-it-works', function(req, res) {
+  res.redirect(301, "http://polkaspots.com");
+  res.end();
+});
+
 module.exports = router;
 
