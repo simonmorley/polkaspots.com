@@ -4,17 +4,17 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res) {
   res.render('index', {
-    title: 'WiFi Analytics, Cloud Managed Wi-Fi',
-    keywords: "Cloud managed Wi-Fi Hotspots, Wi-Fi Analytics, Wi-Fi Software, Cloud WiFi, Wi-Fi Sotware",
-    description: "Manage your Wireless Hotspots from the cloud using from Cucumber Tony, the cloud-based Wi-Fi dashboard."
+    title: 'Secure Public WiFi Networking, WiFi Analytics',
+    keywords: "Secure Wifi networking, WiFi Hotspot system, Captive Portal, Free Wi-Fi Software, Wi-Fi Analytics, best wifi hotspots",
+    description: "Manage your Wireless Hotspots from the cloud using from Cucumber Tony, the cloud-based Wi-Fi dashboard for SME's."
   });
 });
 
 /* GET friendly wifi page. */
 router.get('/friendly-wifi*', function(req, res) {
   res.render('index', {
-    title: 'WiFi Analytics, Cloud Managed Wi-Fi',
-    keywords: "Cloud managed Wi-Fi Hotspots, Wi-Fi Analytics, Wi-Fi Software, Cloud WiFi, Wi-Fi Sotware",
+    title: 'Safe & Secure Public Wi-Fi Networking, Wi-Fi Analytics',
+    keywords: "Safe Wi-Fi Hotspots, Public Wi-Fi content filtering, free Wi-Fi Software, WiFi hotspot system, Wi-Fi splash pages, wifi captive portal",
     description: "Manage your Wireless Hotspots from the cloud using from Cucumber Tony, the cloud-based Wi-Fi dashboard."
   });
 });
@@ -23,25 +23,25 @@ router.get('/friendly-wifi*', function(req, res) {
 router.get('/terms-of-service', function(req, res) {
   res.render('terms', {
     title: 'Terms and Conditions, WiFi Analytics, Cloud Managed Wi-Fi',
-    keywords: "Cloud managed Wi-Fi Hotspots, Wi-Fi Analytics, Wi-Fi Software, Cloud WiFi, Wi-Fi Sotware",
-    description: "Manage your Wireless Hotspots from the cloud using from Cucumber Tony, the cloud-based Wi-Fi dashboard."
+    keywords: "Cloud managed Wi-Fi Hotspots, Wi-Fi Analytics, Wi-Fi Software, Cloud WiFi Terms And Conditions, Wi-Fi Sotware",
+    description: "Manage your Wireless Hotspots from the cloud using Cucumber Tony, the cloud-based Wi-Fi dashboard."
   });
 });
 
 /* GET captive portal page. */
 router.get('/captive-portal', function(req, res) {
   res.render('captive_portal', {
-    title: 'Wi-Fi Captive Portal, Meraki Captive Portal, Ruckus Captive Portal',
-    keywords: "Captive Portal, Meraki Login Pages, Meraki Captive Portal, Ruckus Login Pages, Ruckus Captive Portal, WiFi Hotspot Login Pages",
+    title: 'Wi-Fi Captive Portal, Meraki Captive Portal, Wi-Fi Splash Pages, Ruckus Captive Portal',
+    keywords: "Captive Portal, Wifi splash pages, Meraki splash pages, Meraki Captive Portal, Ruckus Login Pages, Ruckus Captive Portal, WiFi Hotspot Login Pages",
     description: "Simple and beautiful captive portals for all types of networks including Meraki, Cisco and Ruckus."
   });
 });
 
-/* GET feeutres page. */
+/* GET features page. */
 router.get('/features', function(req, res) {
   res.render('features', {
     title: 'Wi-Fi Captive Portal, Wi-Fi Management',
-    keywords: "Captive Portal, Wi-Fi Hotspot Software, Cloud managed Wi-Fi, Wi-Fi hotspots",
+    keywords: "Captive Portal, Wi-Fi Hotspot Software, Cloud managed Wi-Fi, Wi-Fi hotspot system, wifi login pages",
     description: "Cloud managed wireless networks from PolkaSpots Wireless Hotspots."
   });
 });
@@ -50,7 +50,7 @@ router.get('/features', function(req, res) {
 router.get('/features/configure', function(req, res) {
   res.render('configure', {
     title: 'Cloud Managed Wi-Fi Hotspots',
-    keywords: "Cloud wifi, wifi hotspots, wifi, cloud managed wifi, Cucumber Tony",
+    keywords: "Cloud wifi, wifi hotspots, wifi network manager, cloud managed wifi, Doing It With Cucumber Tony",
     description: "Manage your wifi hotspots from our cloud-based Wi-Fi Hotspot dashboard",
   });
 });
@@ -59,7 +59,7 @@ router.get('/features/configure', function(req, res) {
 router.get('/features/create', function(req, res) {
   res.render('create', {
     title: 'Cloud Managed Wi-Fi Hotspot Systems',
-    keywords: "Create Wi-Fi Hotspot, WiFi dashboard, Free Cloud Managed WiFi",
+    keywords: "Create Wi-Fi Hotspot, Free WiFi hotspot software, wifi hotspot system, wifi network system",
     description: "WiFi hotspots with facebook logins, Cloud managed Wi-Fi Dashboard",
   });
 });
@@ -68,7 +68,7 @@ router.get('/features/create', function(req, res) {
 router.get('/features/design', function(req, res) {
   res.render('design', {
     title: 'Facebook Wi-Fi Hotspot Captive Portal',
-    keywords: "WiFi Hotspots, Cloud managed Wireless Networks, Cloud based Wireless, Cloud WiFi",
+    keywords: "wifi splash pages, wifi login pages, wifi data capture, social Wifi hotspot system, captive portal",
     description: "Cloud managed wireless networks for everyone, enterprise Wi-Fi features, everyday hardware",
   });
 });
@@ -77,8 +77,8 @@ router.get('/features/design', function(req, res) {
 router.get('/features/monitor', function(req, res) {
   res.render('monitor', {
     title: 'Cloud managed Wi-Fi Software',
-    keywords: "Cloud-wifi, Cloud Managed WiFi, Cloud Managed Wireless Software, Cloud Public Wi-Fi",
-    description: "Managed your Wireless Hotspots from our cloud-managed Wi-Fi Hotspot dashboard",
+    keywords: "Cloud based wifi, Secure Wifi hotspot system, Cloud Managed WiFi Software, captive portal",
+    description: "Manage your Wireless Hotspots from our cloud-managed Wi-Fi Hotspot dashboard",
   });
 });
 
@@ -86,7 +86,7 @@ router.get('/features/monitor', function(req, res) {
 router.get('/features/wifi-security', function(req, res) {
   res.render('secure', {
     title: 'Cloud managed Wi-Fi Security',
-    keywords: "Cloud Wi-Fi, Cloud Wireless Services, cloud based wireless software",
+    keywords: "Cloud Wi-Fi, wifi hotspot system, secure captive portal, Cloud Wireless Services, cloud based wireless software",
     description: "Captive portal services and wireless hotspot management software",
   });
 });
@@ -114,7 +114,7 @@ router.get('/virgins*', function(req, res) {
   if (req.query.mac == '' || req.query.mac == undefined ) {
     res.render('virgins', {
       title: 'Getting your cloud-managed Wi-Fi Hotspot box set up',
-      keywords: "Wireless hotspots, Wi-Fi Hotspots, Wireless Router",
+      keywords: "Wireless hotspots, Wi-Fi Hotspots, Wifi hotspot system, Wireless Router",
       description: "Cloud managed wireless hotspots for businesses",
     });
   }
@@ -128,7 +128,7 @@ router.get('/virgins*', function(req, res) {
 router.get('/wifi-plans', function(req, res) {
   res.render('plans', {
     title: 'Cloud Managed Wi-Fi Hotspot Plans',
-    keywords: "WiFi Plans, Free Wi-Fi, Wireless Hotspots, WiFi Hotspots, Wi-Fi Services",
+    keywords: "WiFi Plans, Free Wi-Fi, wifi hotspot system, WiFi Hotspot software, Wi-Fi Services",
     description: "Cloud managed wireless hotspots and retail wifi analytics",
   });
 });
@@ -137,7 +137,7 @@ router.get('/wifi-plans', function(req, res) {
 router.get('/opensource-wifi-firmware', function(req, res) {
   res.render('firmware', {
     title: 'Opensource Wi-Fi Hotspot Firmware',
-    keywords: "WiFi Firmware, Router Firware, Hotspot Firmware, Cloud managed wifi software",
+    keywords: "WiFi Firmware, Router Firmware, free wifi hotspot software, Cloud managed wifi software",
     description: "Opensource router firmware from PolkaSpots Wireless Hotspots",
   });
 });
@@ -521,6 +521,16 @@ router.get('/help/*', function(req, res) {
 
 router.get('*', function(req, res){
   res.render('404', { title: 'Express' });
+});
+
+router.get('/how-it-works', function(req, res) {
+  res.redirect(301, "http://polkaspots.com");
+  res.end();
+});
+
+router.get('/meraki-captive-portal-setup', function(req, res) {
+  res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/articles/201069833-Adding-A-Meraki-to-Cucumber-Tony");
+  res.end();
 });
 
 module.exports = router;
