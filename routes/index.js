@@ -171,11 +171,12 @@ router.get('/sync-disabled*', function(req, res) {
 
 /* GET blob page. */
 router.get('/blog*', function(req, res) {
-  res.render('blog', {
-    title: 'Cloud managed love wifi',
-    keywords: "Wi-Fi blog, Wireless Hotspot Info",
-    description: "Wireless hotspot services and tools. Cloud managed wifi hotspots",
-  });
+  res.redirect(301, "http://blog.polkaspots.com/");
+  // res.render('blog', {
+  //   title: 'Cloud managed love wifi',
+  //   keywords: "Wi-Fi blog, Wireless Hotspot Info",
+  //   description: "Wireless hotspot services and tools. Cloud managed wifi hotspots",
+  // });
 });
 
 
