@@ -465,6 +465,11 @@ router.get('/help/last_heartbeat*', function(req, res) {
   res.end();
 });
 
+router.get('/help/wireless-channel-selection*', function(req, res) {
+  res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/articles/202814496");
+  res.end();
+});
+
 router.get('/wifi-hotspot-software-instructions', function(req, res) {
   res.redirect(301, "https://polkaspots.zendesk.com/hc/en-us/articles/202267176");
   res.end();
