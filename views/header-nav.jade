@@ -1,3 +1,4 @@
+
 header#header.navbar.navbar-inverse.navbar-fixed-top.bs-docs-nav(role='banner')
   .container
     .ie-sucks(style="display:none;")
@@ -21,6 +22,8 @@ header#header.navbar.navbar-inverse.navbar-fixed-top.bs-docs-nav(role='banner')
         //  a(data-no-turbolink='true', href='/how-it-works') HOW IT WORKS
         li
           a#plans_link.text-success(href='/wifi-plans') PLANS
+        li
+          include search-form.html
       #user_menu
         ul.nav.navbar-nav.navbar-right
           li

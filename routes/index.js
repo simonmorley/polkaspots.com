@@ -2,6 +2,15 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
+router.get('/search-results', function(req, res) {
+  res.render('search-results', {
+    title: 'Secure Public WiFi Networking, WiFi Analytics',
+    keywords: "Secure Wifi networking, WiFi Hotspot system, Captive Portal, Free Wi-Fi Software, Wi-Fi Analytics, best wifi hotspots",
+    description: "Manage your Wireless Hotspots from the cloud using from Cucumber Tony, the cloud-based Wi-Fi dashboard for SME's."
+  });
+});
+
+/* GET home page. */
 router.get('/', function(req, res) {
   res.render('index', {
     title: 'Secure Public WiFi Networking, WiFi Analytics',
