@@ -548,5 +548,9 @@ router.get('/meraki-captive-portal-setup', function(req, res) {
   res.end();
 });
 
+router.get('/how-it-works', function(req, res) {
+  res.redirect(301, "http://polkaspots.com/");
+  res.end();
+
 module.exports = router;
 
