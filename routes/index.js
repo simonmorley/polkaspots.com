@@ -421,22 +421,22 @@ router.get('/docs_ubiquiti_unifi_ap_pro', function(req, res) {
 });
 
 router.get('/fw_ubiquiti_unifi', function(req, res) {
-  res.redirect(301, "https://s3-eu-west-1.amazonaws.com/ps-peep-downloads/p_150109_00_ubiquiti_unifi.bin");
+  res.redirect(301, "https://s3-eu-west-1.amazonaws.com/ps-peep-downloads/p_150408_00_ubiquiti_unifi.bin");
   res.end();
 });
 
 router.get('/fw_ubiquiti_unifi_ap_pro', function(req, res) {
-  res.redirect(301, "https://s3-eu-west-1.amazonaws.com/ps-peep-downloads/p_150109_00_ubiquiti_unifi_ap_pro.bin");
+  res.redirect(301, "https://s3-eu-west-1.amazonaws.com/ps-peep-downloads/p_150408_00_ubiquiti_unifi_ap_pro.bin");
   res.end();
 });
 
 router.get('/fw_airrouter', function(req, res) {
-  res.redirect(301, "https://s3-eu-west-1.amazonaws.com/ps-peep-downloads/p_150109_00_ubiquiti_airrouter.bin");
+  res.redirect(301, "https://s3-eu-west-1.amazonaws.com/ps-peep-downloads/p_150408_00_ubiquiti_airrouter.bin");
   res.end();
 });
 
 router.get('/fw_ubiquiti_airrouter', function(req, res) {
-  res.redirect(301, "https://s3-eu-west-1.amazonaws.com/ps-peep-downloads/p_140511_00_ubiquiti_airrouter.bin");
+  res.redirect(301, "https://s3-eu-west-1.amazonaws.com/ps-peep-downloads/p_150408_00_ubiquiti_airrouter.bin");
   res.end();
 });
 
@@ -446,7 +446,7 @@ router.get('/docs_ubiquiti_airrouter', function(req, res) {
 });
 
 router.get('/fw_ubiquiti_unifiap_outdoor', function(req, res) {
-  res.redirect(301, "https://s3-eu-west-1.amazonaws.com/ps-peep-downloads/p_150109_00_ubiquiti_unifi-outdoor.bin");
+  res.redirect(301, "https://s3-eu-west-1.amazonaws.com/ps-peep-downloads/p_150408_00_ubiquiti_unifi-outdoor.bin");
   res.end();
 });
 
