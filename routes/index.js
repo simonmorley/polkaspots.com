@@ -151,14 +151,6 @@ router.get('/opensource-wifi-firmware', function(req, res) {
   });
 });
 
-/* GET cucumbertony page. */
-router.get('/cucumber-tony', function(req, res) {
-  res.render('tony', {
-    title: 'Cucumber Tony Cloud Management',
-    keywords: "Cucumber Tony, Wi-Fi Management, Cloud-based WiFi software, Retail WiFi Analytics",
-    description: "Manage thousands of devices with Cucumber Tony, the cloud based wifi and wifi analytics software",
-  });
-});
 
 /* GET contact page. */
 router.get('/contact*', function(req, res) {
@@ -548,6 +540,19 @@ router.get('/meraki-captive-portal-setup', function(req, res) {
   res.end();
 });
 
+router.get('/cucumber-tony', function(req, res) {
+  res.redirect(301, "http://www.cucumbertony.io");
+  res.end();
+});
+
+// /* GET cucumbertony page. */
+// router.get('/cucumber-tony', function(req, res) {
+//   res.render('tony', {
+//     title: 'Cucumber Tony Cloud Management',
+//     keywords: "Cucumber Tony, Wi-Fi Management, Cloud-based WiFi software, Retail WiFi Analytics",
+//     description: "Manage thousands of devices with Cucumber Tony, the cloud based wifi and wifi analytics software",
+//   });
+// });
 router.get('/how-it-works', function(req, res) {
   res.redirect(301, "http://polkaspots.com/");
   res.end();
