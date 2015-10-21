@@ -306,7 +306,7 @@
     background-repeat: no-repeat;
     width: 555px;
     height: 659px;
-    background-image: url(/images/site/coventgardenwifi.jpg);
+    background-image: url('https://d3e9l1phmgx8f2.cloudfront.net/images/www/home-CT-in-ipad.png');
   }
 
   .home-firmware p {
@@ -372,7 +372,7 @@
   }
 
   .home-header-img {
-    background-image: url(/images/site/coventgardenwifi.jpg);
+    background-image: url('https://d3e9l1phmgx8f2.cloudfront.net/images/www/cucumber-tony-wifi-platform-cafe.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
