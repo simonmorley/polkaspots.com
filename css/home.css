@@ -59,6 +59,7 @@
   .ct-is-container h1 {
     text-align: left;
     padding-left: 40px;
+    padding-right: 40px;
     vertical-align: middle;
     font-size: 100px;
     line-height: 110px;
