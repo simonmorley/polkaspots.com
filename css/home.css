@@ -24,7 +24,7 @@
 
   .home-header-img {
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     background-size: cover;
     min-height: 672px;
     padding-bottom: 2rem;
