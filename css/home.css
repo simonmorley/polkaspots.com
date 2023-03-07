@@ -57,10 +57,11 @@
   }
 
   .ct-is-container h1 {
-    text-align: center;
+    text-align: left;
+    padding-left: 40px;
     vertical-align: middle;
-    font-size: 45px;
-    line-height: 60px;
+    font-size: 100px;
+    line-height: 110px;
     font-weight: 800;
   }
 
@@ -482,7 +483,7 @@ ul.title-area {
 }
 
 .ct-is-container {
-  height: 250px;
+  height: 450px;
 }
 
 .typed-cursor{
